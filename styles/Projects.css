@@ -34,6 +34,15 @@
   color: #1e293b;
 }
 
+.fa-brands {
+  font-size: 50px;
+}
+.icon-container {
+  display: flex;
+  margin-left: 35%;
+  gap: 25px;
+}
+
 @media (max-width: 800px) {
   #services_section h2 {
     font-size: 12vw;
