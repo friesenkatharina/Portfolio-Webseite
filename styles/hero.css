@@ -1,0 +1,116 @@
+/* HAMBURGER NAVIGATION */
+
+.hero {
+  text-align: center;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero__img {
+  display: inline;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+}
+.hero__subtitle {
+  color: var(--clr-slate600);
+  font-size: var(--size-base);
+  line-height: 0.9;
+}
+.hero__title {
+  color: var(--clr-slate600);
+  /* text-transform: uppercase; */
+  font-size: var(--size-large);
+  letter-spacing: -0.02em;
+  line-height: 0.5;
+}
+.hero_description {
+  max-width: 60ch;
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+}
+.hero__btn {
+  text-transform: capitalize;
+  font-size: var(--size);
+}
+/* xs */
+@media (min-width: 475px) {
+}
+
+/* small */
+@media (min-width: 640px) {
+  .hero {
+    gap: 1, 5rem;
+  }
+  .hero__img {
+    width: 10.5rem;
+    height: 10.5rem;
+  }
+  .hero__subtitle {
+    font-size: var(--size-large);
+  }
+  .hero__title {
+    font-size: var(--size-4-xl);
+  }
+  .hero_description {
+    font-size: var(--size-base);
+  }
+  .hero__btn {
+    font-size: var(--size-base);
+  }
+}
+
+/* medium */
+@media (min-width: 768px) {
+}
+
+/* large */
+@media (min-width: 1024px) {
+  .hero__img {
+    width: 10.5rem;
+    height: 10.5rem;
+  }
+  .hero__subtitle {
+    font-size: var(--size-2-xl);
+  }
+  .hero__title {
+    font-size: var(--size-6-xl);
+  }
+  .hero_description {
+    font-size: var(--size-large);
+  }
+  .hero__btn {
+    font-size: var(--size-large);
+  }
+}
+
+/* xl */
+
+@media (min-width: 1280px) {
+  .hero {
+    gap: 2rem;
+  }
+
+  .hero__img {
+    width: 10.5rem;
+    height: 10.5rem;
+  }
+  .hero__subtitle {
+    font-size: var(--size-4-xl);
+  }
+  .hero__title {
+    font-size: var(--size-9-xl);
+  }
+  .hero_description {
+    font-size: var(--size-xl);
+  }
+  .hero__btn {
+    font-size: var(--size-xl);
+  }
+}
+
+/* XXL */
+@media (min-width: 1536px) {
+}

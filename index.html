@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+     <link rel="stylesheet" href="./styles/mobile-nav.css"> 
+    <link rel="stylesheet" href="./styles/footer.css">
+<link rel="stylesheet" href="./styles/aside.css">
+    <!-- <link rel="stylesheet" href="./src/main.js">
+    <link rel="stylesheet" href="./src/mobile/mobile-nav.js"> -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,300,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>My Portfolio</title>
+  </head>
+  <body class="light-mode">
+    <!-- NAVIGATION -->
+
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li><a class="header__link" href="#about">About</a></li>
+          <li><a class="header__link" href="#home">Home</a></li>
+          <li><a class="header__link" href="#skills">Skills</a></li>
+          <li><a class="header__link" href="./hobby.html">Hobbys</a></li>
+          <li><a class="header__link" href="#projects">Projects</a></li>
+          <li><a class="header__link" href="#contact">Contact</a></li>
+
+          <!-- underline in navigation -->
+          <li class="header__line"></li>
+          <!-- lightbulb and Button in navigation -->
+          <li>
+            <button id="theme-toggle" class="header__bulb"><i class="fa-regular fa-lightbulb"></i></button>
+          </li>
+          <li><a class="header__resume btn" href="#">Resume</a></li>
+        </ul>
+        <!-- Hamburger menu -->
+   <button class="header__bars">
+            <i class="fa-solid fa-bars"></i>  
+          </button>
+        <!--End of Lightbulb an Button in Navigation -->
+      </nav>
+   
+    </header>
+
+<!-- Mobile Navigation -->
+
+<nav class="mobile-nav">
+  <ul class="mobile-nav__menu">
+    <li><a class="mobile-nav__link" href="#about"></a>About</li>
+    <li><a class="mobile-nav__link" href="#home"></a>Home</li>
+    <li><a class="mobile-nav__link" href="#skills"></a>Skills</li>
+    <li><a class="mobile-nav__link" href="#hobbys">Hobbys</a></li>
+    <li><a class="mobile-nav__link" href="#projects">Projects</a></li>
+    <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
+
+    <li class="mobile-nav__link-line"></li>
+    <li>   <button id="theme-toggle" class="mobile-nav__bulb"><i class="fa-regular fa-lightbulb"></i></button></li>
+    <li><a class="header__resume  btn" href="#">Resume</a></li>
+  </ul>
+</nav>
+
+</div>
+<!-- End of Mobile Navigation -->
+    <main>
+      <section class="hero container">
+        <img
+          class="hero__img"
+          src="./assets/IMG_5074.JPG"
+          alt="Profile picture"
+        />
+        <h2 class="hero__subtitle">Hi, I'm Katharina 👋 </h2>
+        <h1 class="hero__title">WEBDEVELOPMENT <br />STUDENT</h1>
+        <p class="hero__description">
+          <strong>Meine Reise durch das Berufsleben</strong> ist geprägt von
+          einer Fülle an inspirierenden Erfahrungen und vielseitigen Stationen.
+          <br />
+          Mit einer immerwährenden Neugier für das Digitale, begebe ich mich in
+          den Bereich des <strong>Webentwicklungs</strong>-Vollzeitkurses, um
+          meine Fähigkeiten weiter auszubauen.
+        </p>
+        <a class="hero__btn btn" href="">REACH OUT</a>
+      </section>
+
+      <!-- -------------- START ABOUT SECTION --------------->
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">
+            Helo there! <strong>I'm Katharina <br>based in Erlangen</strong> <br><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nam.</strong> to venturing into the digital world, my resume 
+         p
+     
+    
+          <p class="about__description">
+            The common thread of my journey is my insatiable appetite for taking on challenges and continually expanding.
+            <strong>
+              <br />
+             
+          </p>
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">
+            which Technologies i'm currently learning
+          </h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">HTML</li>
+              <li class="about__list">CSS</li>
+              <li class="about__list">Linux Ubuntu</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">JavaScript</li>
+              <li class="about__list">Tealwind CSS</li>
+              <li class="about__list">ReactJS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img
+            class="about__img"
+            width="300px "
+            height="500px"
+            src="./assets/Facetune_06-06-2023-09-28-11.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+    </main>
+<!-- ----------- END OF ABOUT SECTION -------------------------- -->
+
+
+
+
+<!-- FOOTER -->
+
+ <footer>
+  <div class="footerContainer">
+    <div class="socialIcons">
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-google-plus"></i></a>
+    </div>
+
+      <!-- <ul>
+        <li><a href=""></a>Home</li>
+        <li><a href=""></a>About</li>
+        <li><a href=""></a>Contact Us</li>
+
+      </ul> -->
+
+    <div class="footerBottom">
+      <p>
+        Copyright &copy;2023  Designed by
+        <span class="designer">Katharina F.</span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+
+<!--  end of footer>  --> 
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

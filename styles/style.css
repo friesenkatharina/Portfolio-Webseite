@@ -1,0 +1,78 @@
+/* colors from tailwind css */
+
+:root {
+  --clr-indigo950: #1e1b4b;
+  --clr-light: #dcfce7;
+  --clr-slate400: #94a3b8;
+  --clr-slate600: #475569;
+  --clr-slate800: #1e293b;
+  --clr-pink: #db2777;
+  --clr-indigo: #4f46e5;
+
+  /* rose rgb(225, 29, 72) */
+  /* indigo rgb(79,70 229) */
+
+  /* FONT SIZES  valiues from tailwind css*/
+
+  --size-xxs: 0, 5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-large: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2-xl: 1.5rem;
+  --size-3-xl: 1.875rem;
+  --size-4-xl: 2.25rem;
+  --size-5-xl: 3rem;
+  --size-6-xl: 3.75rem;
+  --size-7-xl: 4.5rem;
+  --size-8-xl: 6rem;
+  --size-9-xl: 8rem;
+  --size-10-xl: 10rem;
+}
+/* MAIN SET UP  */
+* {
+  margin: 0;
+  line-height: 1.5;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* .light-mode {
+  --clr-light: #1e1b4b;
+  --clr-dark: #dcfce7;
+  --clr-slate400: #1e293b;
+  --clr-slate600: #1e293b;
+  --clr-slate800: #1e293b;
+} */
+
+body {
+  font-family: "Cabinet Grotesk", sans-serif;
+  background-color: var(--clr-indigo950);
+  color: var(--clr-light);
+}
+
+/* -------------------- */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+button {
+  display: flex;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+a {
+  color: var(--clr-pink);
+}
+strong {
+  color: var(--clr-indigo);
+}
