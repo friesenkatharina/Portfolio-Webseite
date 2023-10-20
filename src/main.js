@@ -20,3 +20,30 @@ themeToggle.addEventListener("click", function () {
     body.style.backgroundColor = "var(--deine-neue-hintergrundfarbe)";
   }
 });
+
+// Überprüfe, ob der Benutzer zuvor die Glühbirne ausgeschaltet hat
+const isLightbulbOn = localStorage.getItem("isLightbulbOn") === "true";
+
+// Aktualisiere das Icon basierend auf dem gespeicherten Zustand
+const lightbulbIcon = themeToggle.querySelector("i.fa-lightbulb");
+if (isLightbulbOn) {
+  lightbulbIcon.classList.add("active");
+  body.style.backgroundColor = "var(--deine-neue-hintergrundfarbe)";
+}
+
+// Event-Listener um auf Klickereignisse zu reagieren
+themeToggle.addEventListener("click", function () {
+  if (lightbulbIcon.classList.contains("active")) {
+    // Schalte die Glühbirne aus, indem die Klasse "active" entfernt wird
+    lightbulbIcon.classList.remove("active");
+    body.style.backgroundColor = "var(--clr-indigo950)";
+    // Speichere den Zustand "aus" im localStorage
+    localStorage.setItem("isLightbulbOn", "false");
+  } else {
+    // Schalte die Glühbirne ein, indem die Klasse "active" hinzugefügt wird
+    lightbulbIcon.classList.add("active");
+    body.style.backgroundColor = "var(--deine-neue-hintergrundfarbe)";
+    // Speichere den Zustand "an" im localStorage
+    localStorage.setItem("isLightbulbOn", "true");
+  }
+});
