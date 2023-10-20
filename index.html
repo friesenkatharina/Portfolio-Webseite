@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <!-- IMPORT CSS -->
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/main-nav.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/hero.css" />
     <link rel="stylesheet" href="./styles/about.css" />
@@ -35,11 +35,10 @@
       <nav>
         <ul class="header__menu">
           <li><a class="header__link" href="#about">About</a></li>
-          <li><a class="header__link" href="#home">Home</a></li>
-          <li><a class="header__link" href="#skills">Skills</a></li>
           <li><a class="header__link" href="./hobby.html">Hobbys</a></li>
+          <li><a class="header__link" href="#skills">Skills</a></li>
           <li><a class="header__link" href="#projects">Projects</a></li>
-          <li><a class="header__link" href="contact.html">Contact</a></li>
+        <li><a class="header__link" href="contact.html">Contact</a></li>
 
           <!-- underline in navigation -->
           <li class="header__line"></li>
@@ -47,12 +46,14 @@
           <li>
             <button id="theme-toggle" class="header__bulb"><i class="fa-regular fa-lightbulb"></i></button>
           </li>
-          <li><a class="header__resume btn" href="#">Resume</a></li>
+      
         </ul>
         <!-- Hamburger menu -->
-          <button class="header__bars">
+        <li class="header__hamburger">
+          <button>
             <i class="fa-solid fa-bars"></i>  
           </button>
+        </li>
         <!--End of Lightbulb an Button in Navigation -->
       </nav>
    
@@ -63,7 +64,7 @@
 <nav class="mobile-nav">
   <ul class="mobile-nav__menu">
     <li><a class="mobile-nav__link" href="#about"></a>About</li>
-    <li><a class="mobile-nav__link" href="#home"></a>Home</li>
+    
     <li><a class="mobile-nav__link" href="#skills"></a>Skills</li>
     <li><a class="mobile-nav__link" href="#hobbys">Hobbys</a></li>
     <li><a class="mobile-nav__link" href="#projects">Projects</a></li>
@@ -71,17 +72,19 @@
 
     <li class="mobile-nav__link-line"></li>
     <li>   <button id="theme-toggle" class="mobile-nav__bulb"><i class="fa-regular fa-lightbulb"></i></button></li>
-    <li><a class="header__resume  btn" href="#">Resume</a></li>
+    <li><a class="header__resume  btn" href="assets/Lebenslauf.pdf">Resume</a></li>
   </ul>
 </nav>
 
 </div>
 <!-- End of Mobile Navigation -->
+
+<!--Start Main -->
     <main>
       <section class="hero container">
         <img
           class="hero__img"
-          src="./assets/IMG_5074.JPG"
+          src="./assets/IMG_4344.jpeg"
           alt="Profile picture"
         />
         <h2 class="hero__subtitle">Hi, I'm Katharina 👋 </h2>
@@ -94,7 +97,7 @@
           den Bereich des <strong>Webentwicklungs</strong>-Vollzeitkurses, um
           meine Fähigkeiten weiter auszubauen.
         </p>
-        <a class="hero__btn btn" href="#">Resume</a>
+        <a class="hero__btn btn" href="./assets/Lebenslauf.pdf">Resume</a>
       </section>
 
       <!-- -------------- START ABOUT SECTION --------------->
@@ -102,13 +105,13 @@
         <div class="about__content">
           <h2 class="about__title">About</h2>
           <p class="about__description">
-            Helo there! <strong>I'm Katharina <br>based in Erlangen</strong> <br><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nam.</strong> to venturing into the digital world, my resume 
+            Helo there! <strong>I'm Katharina <br>based in Erlangen, Mittelfranken Germany </strong><br>The district of Middle Franconia is located in the northwest of Bavaria and borders the neighboring state of Baden-Württemberg to the west.
          
      
     
           <p class="about__description">
             The common thread of my journey is my insatiable appetite for taking on challenges and continually expanding.
-            <strong>
+         
               <br />
              
           </p>
@@ -126,15 +129,16 @@
               <li class="about__list">JavaScript</li>
               <li class="about__list">Tealwind CSS</li>
               <li class="about__list">ReactJS</li>
+              <li class="about__list" >Python</li>
             </ul>
           </div>
         </div>
         <div class="about__img-wrapper">
           <img
             class="about__img"
-            width="300px "
+            width="400px "
             height="500px"
-            src="./assets/Facetune_06-06-2023-09-28-11.jpg"
+            src="./assets/raster-pic.jpg"
             alt=""
           />
         </div>
@@ -145,13 +149,15 @@
 <!-- Project SECTION -->
 <section id="services_section">
   <h2>Projects</h2>
-  <div class="flex_container">
+  <div class="flex_container ">
     <div class="card">
       <h3>HTML & CSS</h3>
-      <div class="icon-container">
-      <i class="fa-brands  fa-html5"></i>
-      <i class="fa-brands fa-css3-alt"></i>
+
+      <div class="icon-container " >
+<i class="fa-brands  fa-html5 aside "></i>
+     <i class="fa-brands fa-css3-alt "></i>
     </div>
+
       <p>
         Iusto, et? voluptate consectetur similique esse eius suscipit eos
         quasi quia iste. Iusto, et? Iusto, et? voluptate consectetur
@@ -207,8 +213,7 @@
  <footer>
   <div class="footerContainer">
     <div class="socialIcons">
-      <a href=""><i class="fa-brands fa-facebook"></i></a>
-      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://github.com/friesenkatharina"><i class="fa-brands fa-github"></i></a>
       <a href=""><i class="fa-brands fa-google-plus"></i></a>
     </div>
 
@@ -224,8 +229,14 @@
 
 
 
+
+
+
+
+
 <!--  end of footer>  --> 
 
-    <script type="module" src="./src/main.js"></script>
+    <script src="/src/main.js"></script>
+
   </body>
 </html>

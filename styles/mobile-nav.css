@@ -45,3 +45,13 @@
 .mobile-nav__btn {
   font-size: var(--size-sm);
 }
+/* Standardstil für die Glühbirne */
+.fa-lightbulb {
+  /* Stil für ausgeschaltete Glühbirne */
+  color: var(--clr-pink);
+}
+
+/* Stil für eingeschaltete Glühbirne */
+.fa-lightbulb.active {
+  color: yellow;
+}

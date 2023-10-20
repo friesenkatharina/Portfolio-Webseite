@@ -6,6 +6,7 @@
   padding-bottom: 2rem;
   position: relative;
   z-index: 9999;
+  margin-right: 20px;
 }
 
 .header__menu {
@@ -45,6 +46,18 @@
 }
 .header__resume {
   font-size: var(--size-xs);
+}
+
+/* Standard-Stile für das Hamburger-Menü */
+.header__hamburger {
+  display: none; /* Auf großen Bildschirmen unsichtbar */
+}
+
+/* Media Query für mobile Geräte (z. B. Smartphones) */
+@media screen and (max-width: 768px) {
+  .header__hamburger {
+    display: block; /* Auf mobilen Geräten sichtbar */
+  }
 }
 
 /* medium */
