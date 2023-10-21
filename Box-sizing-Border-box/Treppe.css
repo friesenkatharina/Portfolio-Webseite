@@ -1,0 +1,32 @@
+body {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+section {
+  width: 400px;
+  height: 400px;
+}
+.yellow-box {
+  border: 5px solid rgb(196, 94, 17);
+  background: linear-gradient(to right, yellow 0%, yellow 100%);
+  width: 100px;
+  height: 100px;
+}
+.bg-red {
+  background: linear-gradient(to right, red 0%, red 100%);
+}
+#row-1 {
+  width: 100px;
+  padding-left: 100px;
+}
+#row-2 {
+  width: 200px;
+  padding-left: 200px;
+}
+#row-3 {
+  width: 300px;
+  padding-left: 300px;
+}

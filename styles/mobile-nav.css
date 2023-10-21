@@ -53,5 +53,5 @@
 
 /* Stil für eingeschaltete Glühbirne */
 .fa-lightbulb.active {
-  color: yellow;
+  color: var(--clr-pink);
 }
