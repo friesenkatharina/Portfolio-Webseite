@@ -2,6 +2,7 @@
 const themeToggle = document.getElementById("theme-toggle");
 const body = document.body;
 const isLightbulbOn = localStorage.getItem("isLightbulbOn") === "true";
+
 //  Event-Listener  um auf Klickereignisse zu reagieren
 themeToggle.addEventListener("click", function () {
   // Finde das <i>-Element innerhalb des Buttons
@@ -17,7 +18,7 @@ themeToggle.addEventListener("click", function () {
     // Schalte die Glühbirne ein, indem die Klasse "active" hinzugefügt wird
     lightbulbIcon.classList.add("active");
     // Ändere die Hintergrundfarbe der Seite auf eine neue Farbe
-    body.style.backgroundColor = "var(--clr-slate400)";
+    body.style.backgroundColor = "var(--clr-light)";
   }
 });
 
@@ -25,7 +26,7 @@ themeToggle.addEventListener("click", function () {
 const lightbulbIcon = themeToggle.querySelector("fa-lightbulb"); // Der querySelector in JavaScript ist eine Methode, die es ermöglicht, ein HTML-Element im DOM (Document Object Model) anhand eines CSS-Selektors auszuwählen
 if (isLightbulbOn) {
   lightbulbIcon.classList.add("active");
-  body.style.backgroundColor = "var(--clr-slate400)";
+  body.style.backgroundColor = "var(--clr-light)";
 }
 
 // Event-Listener um auf Klickereignisse zu reagieren
