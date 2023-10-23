@@ -39,7 +39,7 @@ themeToggle.addEventListener("click", function () {
   } else {
     // Schalte die Glühbirne ein, indem die Klasse "active" hinzugefügt wird
     lightbulbIcon.classList.add("active");
-    body.style.backgroundColor = "var(--deine-neue-hintergrundfarbe)";
+    body.style.backgroundColor = "var(--clr-pink)";
     // Speichere den Zustand "an" im localStorage
     localStorage.setItem("isLightbulbOn", "true");
   }

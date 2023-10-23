@@ -101,9 +101,9 @@
 }
 
 /* Animation IMG Roboter */
-/* Füge die CSS-Regeln für das Bild hinzu */
+
 .hero__img {
-  width: 100px; /* Breite des Bildes */
+  width: 100px;
   position: relative;
   animation: moveImage 4s linear infinite alternate; /* Animationseigenschaften */
 }
