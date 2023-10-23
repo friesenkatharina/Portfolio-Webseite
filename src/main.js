@@ -22,7 +22,7 @@ themeToggle.addEventListener("click", function () {
 });
 
 // Aktualisiere das Icon basierend auf dem gespeicherten Zustand
-const lightbulbIcon = themeToggle.querySelector("fa-lightbulb");
+const lightbulbIcon = themeToggle.querySelector("fa-lightbulb"); // Der querySelector in JavaScript ist eine Methode, die es ermöglicht, ein HTML-Element im DOM (Document Object Model) anhand eines CSS-Selektors auszuwählen
 if (isLightbulbOn) {
   lightbulbIcon.classList.add("active");
   body.style.backgroundColor = "var(--clr-slate400)";
@@ -39,7 +39,7 @@ themeToggle.addEventListener("click", function () {
   } else {
     // Schalte die Glühbirne ein, indem die Klasse "active" hinzugefügt wird
     lightbulbIcon.classList.add("active");
-    body.style.backgroundColor = "var(--clr-pink)";
+    body.style.backgroundColor = " var(--clr-light)";
     // Speichere den Zustand "an" im localStorage
     localStorage.setItem("isLightbulbOn", "true");
   }
