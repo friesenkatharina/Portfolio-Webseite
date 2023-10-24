@@ -49,7 +49,7 @@
 }
 
 /* Standard-Stile für das Hamburger-Menü */
-.header__hamburger {
+.hamburger-menu {
   display: none; /* Auf großen Bildschirmen unsichtbar */
 }
 
