@@ -48,11 +48,6 @@
   font-size: var(--size-xs);
 }
 
-/* Standard-Stile für das Hamburger-Menü */
-.hamburger-menu {
-  display: none; /* Auf großen Bildschirmen unsichtbar */
-}
-
 /* Media Query für mobile Geräte (z. B. Smartphones) */
 @media screen and (max-width: 768px) {
   .header__hamburger {
