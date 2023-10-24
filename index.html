@@ -28,7 +28,14 @@
     />
     <title>My Portfolio</title>
   </head>
-  <body class="light-mode">
+  <body >   
+    
+    <!-- Hamburger menu -->
+        <label class="hamburger-menu">
+          <input type="checkbox">
+  
+        </label>
+        <aside></aside>
     <!-- NAVIGATION -->
 
     <header class="header container">
@@ -49,14 +56,7 @@
           <li><a class="header__link" href="contact.html">Contact</a></li>
 
         </ul>
-        <!-- Hamburger menu -->
-        <label class="header__hamburger">
-          <input type="checkbox">
-          <!-- <button>
-            <i class="fa-solid fa-bars"></i>  
-          </button> -->
-        </label>
-        <aside></aside>
+     
         <!--End of Lightbulb an Button in Navigation -->
       </nav>
    
@@ -85,11 +85,12 @@
 <!--Start Main -->
     <main>
       <section class="hero container">
-        <img
+        <img id="coloredImage"
           class="hero__img"
           src="./assets/pics/android-svgrepo-com.svg"
           alt="Profile picture"
         />
+
         <h2 class="hero__subtitle">Hi, I'm Katharina 👋 </h2>
         <h1 class="hero__title">WEBDEVELOPMENT <br />STUDENT</h1>
         <p class="hero__description">
@@ -102,7 +103,7 @@
         </p>
         <a class="hero__btn btn" href="./assets/Four-Loops-JS.pdf">Resume</a>
       </section>
-
+    
       <!-- -------------- START ABOUT SECTION --------------->
       <section id="about" class="about container section">
         <div class="about__content">
