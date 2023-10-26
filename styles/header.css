@@ -49,11 +49,11 @@
 }
 
 /* Media Query für mobile Geräte (z. B. Smartphones) */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .header__hamburger {
     display: block; /* Auf mobilen Geräten sichtbar */
-  }
-}
+/* }
+} */
 
 /* medium */
 @media (min-width: 768px) {
