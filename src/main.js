@@ -27,7 +27,7 @@ if (isLightbulbOn) {
   body.style.backgroundColor = "var( --clr-slate800)";
 }
 
-let darkMode = false;
+let darkMode = true;
 // Event-Listener um auf Klickereignisse zu reagieren
 themeToggle.addEventListener("click", function () {
   darkMode = !darkMode;
@@ -47,3 +47,9 @@ themeToggle.addEventListener("click", function () {
 });
 
 // ***************************
+
+// Contact HTML
+// function lightModus() {
+//   let element = document.body;
+//   element.classList.toggle("dark-mode");
+// }

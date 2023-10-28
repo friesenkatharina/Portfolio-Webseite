@@ -54,11 +54,19 @@
   margin-top: 5rem;
 }
 
+#coloredImage {
+  margin-top: 50px;
+}
+
+.hero__title {
+  margin-top: 45px;
+}
+
 /* SCREEN SET UP CONTAINER TOP */
 /* xs */
-@media (min-width: 475px) {
+@media (min-width: 375px) {
   .container {
-    max-width: 475px;
+    max-width: 375px;
   }
 }
 

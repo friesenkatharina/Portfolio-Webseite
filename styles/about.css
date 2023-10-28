@@ -17,7 +17,7 @@
 .about__description {
   max-width: 60ch;
   font-size: var(--siz-sm);
-  color: var(--clr-slate400);
+  color: var(--clr-slate600);
 }
 .about__hr {
   border-color: var(--clr-slate800);
@@ -49,8 +49,8 @@
   border: 1px solid var(--clr-slate800);
 }
 /* xs */
-@media (min-width: 475px) {
-  .about {
+@media (min-width: 375px) {
+  #about {
     gap: 1.5rem;
   }
 
