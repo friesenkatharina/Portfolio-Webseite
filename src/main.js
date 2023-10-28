@@ -5,7 +5,7 @@ const isLightbulbOn = localStorage.getItem("isLightbulbOn") === "true";
 
 //  Event-Listener  um auf Klickereignisse zu reagieren
 themeToggle.addEventListener("click", function () {
-  const lightbulbIcon = themeToggle.querySelector("i.fa-lightbulb");
+  const lightbulbIcon = themeToggle.querySelector(".fa-lightbulb");
   if (lightbulbIcon.classList.contains("active")) {
     // Schalte die Glühbirne aus, indem die Klasse "active" entfernt wird
     lightbulbIcon.classList.remove("active");
@@ -15,20 +15,23 @@ themeToggle.addEventListener("click", function () {
     // Schalte die Glühbirne ein, indem die Klasse "active" hinzugefügt wird
     lightbulbIcon.classList.add("active");
     // Ändere die Hintergrundfarbe der Seite auf eine neue Farbe
-    body.style.backgroundColor = "var( --clr-slate400)";
+    body.style.backgroundColor = "var( --clr-slate800)";
   }
 });
 
 // Aktualisiere das Icon basierend auf dem gespeicherten Zustand
-const lightbulbIcon = themeToggle.querySelector("fa-regular"); // Der querySelector in JavaScript ist eine Methode, die es ermöglicht, ein HTML-Element im DOM (Document Object Model) anhand eines CSS-Selektors auszuwählen
+const lightbulbIcon = themeToggle.querySelector(".fa-regular"); // Der querySelector in JavaScript ist eine Methode, die es ermöglicht, ein HTML-Element im DOM (Document Object Model) anhand eines CSS-Selektors auszuwählen
+
 if (isLightbulbOn) {
   lightbulbIcon.classList.add("active");
-  body.style.backgroundColor = "var( --clr-slate400)";
+  body.style.backgroundColor = "var( --clr-slate800)";
 }
 
+let darkMode = false;
 // Event-Listener um auf Klickereignisse zu reagieren
 themeToggle.addEventListener("click", function () {
-  if (lightbulbIcon.classList.contains("active")) {
+  darkMode = !darkMode;
+  if (darkMode) {
     // Schalte die Glühbirne aus, indem die Klasse "active" entfernt wird
     lightbulbIcon.classList.remove("active");
     body.style.backgroundColor = "var(--clr-indigo950)";
