@@ -54,10 +54,7 @@ footer {
   margin: 0px 5px;
 }
 
-@media (max-width: 768px) {
-}
-
-@media (max-width: 700px) {
+/* @media (max-width: 768px) {
   .footerNav ul {
     flex-direction: column;
   }
@@ -68,5 +65,29 @@ footer {
   }
   section {
     padding: 3rem 2rem;
+  }
+} */
+/* Anpassungen für Bildschirme kleiner als 375px */
+@media (min-width: 275px) {
+  .footerContainer {
+    padding: 18px 10px; /* Reduzierter Seitenabstand */
+    font-size: var(--size-sm);
+  }
+
+  .footerBottom p {
+    font-size: 12px; /* Kleinere Schriftgröße */
+  }
+
+  .socialIcons a {
+    margin: 0 12px; /* Reduzierter Abstand zwischen Icons */
+  }
+
+  .socialIcons i {
+    font-size: 20px; /* Kleinere Icons */
+  }
+  .designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 }

@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const themeToggle = document.getElementById("themeToggle");
+
+  if (themeToggle) {
+    // Prüfen, ob das Element existiert
+    themeToggle.addEventListener("click", function () {
+      // Aktionen für das Umschalten des Themas
+    });
+  }
+});
+
 // Button-Element mit der ID "theme-toggle"
 const themeToggle = document.getElementById("theme-toggle");
 const body = document.body;
@@ -27,7 +38,7 @@ if (isLightbulbOn) {
   body.style.backgroundColor = "var( --clr-slate800)";
 }
 
-let darkMode = true;
+let darkMode = false;
 // Event-Listener um auf Klickereignisse zu reagieren
 themeToggle.addEventListener("click", function () {
   darkMode = !darkMode;
@@ -47,9 +58,3 @@ themeToggle.addEventListener("click", function () {
 });
 
 // ***************************
-
-// Contact HTML
-// function lightModus() {
-//   let element = document.body;
-//   element.classList.toggle("dark-mode");
-// }

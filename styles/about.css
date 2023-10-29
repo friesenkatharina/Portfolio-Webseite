@@ -50,7 +50,7 @@
 }
 /* xs */
 @media (min-width: 375px) {
-  #about {
+  #about .underline {
     gap: 1.5rem;
   }
 

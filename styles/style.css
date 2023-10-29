@@ -46,8 +46,10 @@ html {
   --clr-slate800: #1e293b;
 } */
 
+@import url("https://fonts.googleapis.com/css2?family=Chela+One&family=Dancing+Script:wght@400;700&family=Dosis:wght@700&family=Maven+Pro:wght@400;500;600;700&family=Pacifico&family=Roboto:wght@300&display=swap");
+
 body {
-  font-family: "Cabinet Grotesk", sans-serif;
+  font-family: "Agbalumo";
   background-color: var(--clr-indigo950);
   color: var(--clr-slate600);
 }
