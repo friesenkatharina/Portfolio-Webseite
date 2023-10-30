@@ -43,8 +43,37 @@
   gap: 25px;
 }
 
-@media (max-width: 800px) {
+/* Responsive styles for screens up to 375px */
+@media screen and (max-width: 375px) {
   #services_section h2 {
-    font-size: 12vw;
+    font-size: 30px; /* Smaller font size for the title */
+    margin: 20px 0; /* Adjust top and bottom margin */
+  }
+
+  .flex_container {
+    gap: 20px; /* Smaller gap between cards */
+  }
+
+  .card {
+    width: 90%; /* Increase width to utilize more screen space */
+    padding: 40px 15px; /* Smaller padding */
+    border-radius: 50px; /* Smaller border radius */
+  }
+
+  .card h3 {
+    font-size: 24px; /* Smaller font size for headings in cards */
+  }
+
+  .card p {
+    font-size: 14px; /* Smaller text for readability */
+  }
+
+  .fa-brands {
+    font-size: 40px; /* Smaller icon size */
+  }
+
+  .icon-container {
+    margin-left: 25%; /* Adjust icon container alignment */
+    gap: 15px; /* Reduce gap between icons */
   }
 }

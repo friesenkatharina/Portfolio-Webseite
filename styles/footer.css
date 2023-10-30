@@ -67,7 +67,7 @@ footer {
     padding: 3rem 2rem;
   }
 } */
-/* Anpassungen für Bildschirme kleiner als 375px */
+/* Anpassungen für Bildschirme  275px */
 @media (min-width: 275px) {
   .footerContainer {
     padding: 18px 10px; /* Reduzierter Seitenabstand */
