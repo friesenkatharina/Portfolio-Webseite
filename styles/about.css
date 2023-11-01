@@ -92,7 +92,10 @@
   /* Falls ::before genutzt wird, könnten Anpassungen nötig sein, abhängig vom Kontext */
   .about__::before {
     margin-left: 0.25em;
-    /* Weitere Anpassungen hier */
+  }
+  .about__img-wrapper {
+    width: 350px;
+    height: 250px;
   }
 }
 

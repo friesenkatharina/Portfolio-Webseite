@@ -79,7 +79,7 @@ a:hover {
   .container {
     font-size: 12px;
   }
-  .hero p {
+  .hero {
     display: none;
   }
   .hero__btn {
