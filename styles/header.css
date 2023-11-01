@@ -146,3 +146,8 @@ li .header__link {
     font-size: var(--size-sm);
   }
 } */
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  .header nav ul li a {
+    font-size: 11px;
+  }
+}

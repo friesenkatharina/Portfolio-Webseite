@@ -1,9 +1,3 @@
-/* #resultArea {
-  margin-top: 50px;
-  width: 20%;
-  height: 20px;
-  background-color: rgb(182, 177, 177);
-} */
 .resultWindow {
   margin-top: 150px;
   margin-left: 60px;
@@ -60,18 +54,7 @@ td:hover {
   border-radius: none;
   background-color: #fca5a5;
 }
-@media screen and (max-width: 368px) {
-  #resultArea {
-    height: 50vh;
-  }
 
-  table {
-    height: 50vh;
-  }
-  td {
-    font-size: 48px;
-  }
-}
 .main-calc {
   position: relative;
 }
@@ -93,3 +76,52 @@ h3 {
 .main-calc {
   border-bottom: 5px solid #fca5a5;
 }
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  .calc-description {
+    display: none;
+  }
+  .resultWindow {
+    margin-top: 150px;
+    margin-left: 60px;
+    width: 75%;
+  }
+  .center-container {
+    margin-left: 60px;
+    width: 75%;
+    border: 5px solid #fca5a5;
+    background-color: rgb(50, 50, 50);
+    color: #fca5a5;
+    font-family: monospace;
+  }
+}
+
+/* Media Queries für Geräte mit einer Breite von maximal 275px */
+
+/* @media screen and (max-width: 275px) {
+  .resultWindow,
+  .center-container {
+    margin-left: 10px;
+    width: calc(100% - 20px); 
+  }
+
+  #resultArea {
+    font-size: 20px;
+    padding: 10px;
+    border-top: 15px solid lightseagreen;
+  }
+
+  td {
+    font-size: 18px;
+  }
+
+  #calc-btn {
+    margin: 20px 10px;
+    font-size: var(--size-lg);
+  }
+
+  #calc-btn a {
+    padding: 5px;
+    font-size: 16px;
+  }
+} */

@@ -46,9 +46,9 @@
 }
 
 /* Responsive styles for screens up to 375px */
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   #services_section h2 {
-    font-size: 30px; /* Smaller font size for the title */
+    font-size: 20px; /* Smaller font size for the title */
     margin: 20px 0; /* Adjust top and bottom margin */
   }
 
@@ -71,11 +71,17 @@
   }
 
   .fa-brands {
-    font-size: 40px; /* Smaller icon size */
+    font-size: 20px; /* Smaller icon size */
   }
 
   .icon-container {
     margin-left: 25%; /* Adjust icon container alignment */
     gap: 15px; /* Reduce gap between icons */
+  }
+  .img-container {
+    width: 50px;
+  }
+  .aside {
+    padding: 20px;
   }
 }

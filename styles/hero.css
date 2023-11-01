@@ -10,6 +10,7 @@
 }
 
 .hero__subtitle {
+  margin-top: 80px;
   color: var(--clr-slate600);
   font-size: var(--size-base);
   line-height: 0.9;
@@ -75,7 +76,17 @@ a:hover {
     width: 100%;
   }
 }
-
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  .container {
+    font-size: 12px;
+  }
+  .hero p {
+    display: none;
+  }
+  .hero__btn {
+    margin-top: 80px;
+  }
+}
 /* xs */
 @media (min-width: 275px) {
   .hero {
@@ -176,8 +187,4 @@ a:hover {
   .hero__btn {
     font-size: var(--size-xl);
   }
-}
-
-/* XXL */
-@media (min-width: 1536px) {
 }
