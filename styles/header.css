@@ -98,10 +98,10 @@ li .header__link {
 } */
 
 /* medium */
-@media (min-width: 368px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .header__menu {
     display: flex;
-    align-items: center;
+    margin: 0 auto;
     list-style: none;
     padding: 0;
     gap: 1em;
@@ -146,8 +146,3 @@ li .header__link {
     font-size: var(--size-sm);
   }
 } */
-@media screen and (min-width: 200px) and (max-width: 768px) {
-  .header nav ul li a {
-    font-size: 11px;
-  }
-}
