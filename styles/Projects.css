@@ -37,12 +37,12 @@
 
 .img-container {
   width: 100px;
-  margin: 0 auto;
+  margin: auto;
 }
 .icon-container {
   display: flex;
-
-  gap: 50px;
+  padding: 0 auto;
+  margin: 0 auto;
 }
 
 /* Responsive styles for screens up to 375px */

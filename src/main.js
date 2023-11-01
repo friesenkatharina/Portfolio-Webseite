@@ -73,3 +73,4 @@
 //   let element = document.body;
 //   element.classList.toggle("dark-mode");
 // }
+/* This a top-level function with some arguments that should be mangled */

@@ -12,3 +12,5 @@ using HTML CSS JavaScript
 \*Developed first with the Mobile First methodology
 
 \*Compatible with all mobile devices and with a beautiful and pleasant user interface.
+
+![Beispielbild](./ASSETS/pics/browser-few-firstPage.png)
