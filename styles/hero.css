@@ -85,6 +85,7 @@ a:hover {
   .hero__btn {
     margin-top: 80px;
   }
+
   .underline {
     display: none;
   }
@@ -109,9 +110,6 @@ a:hover {
   }
   .hero__btn {
     font-size: var(--size-base);
-  }
-  .underline {
-    margin: 0 auto;
   }
 }
 
