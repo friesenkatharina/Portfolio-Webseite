@@ -1,4 +1,6 @@
 .resultWindow {
+  color: white;
+  background-color: #94a3b8;
   margin-top: 150px;
   margin-left: 60px;
   width: 20%;
@@ -36,7 +38,7 @@ td:hover {
   border-top: 20px solid lightseagreen;
   border-top-left-radius: 50%;
   border-top-right-radius: 10px;
-  background-color: rgb(220, 223, 223);
+  background-color: #fdc8c8;
   font-size: 34px;
   display: flex;
   justify-content: flex-end;
