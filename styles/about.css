@@ -100,18 +100,18 @@
 }
 
 /* small */
-@media (min-width: 640px) {
+/* @media (min-width: 640px) {
   .about__img-wrapper {
     margin: 0 auto;
   }
 }
 .about__img {
   width: 22rem;
-}
+} */
 
 /* medium */
-@media (min-width: 768px) {
-}
+/* @media (min-width: 768px) {
+} */
 
 /* large */
 @media (min-width: 1024px) {
