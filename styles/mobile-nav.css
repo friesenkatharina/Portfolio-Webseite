@@ -46,6 +46,9 @@
   color: #475569;
   font-size: medium;
 }
+.left:hover {
+  color: #db2777;
+}
 .lightbulb {
   position: relative;
   width: 120px;

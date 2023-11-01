@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./styles/Projects.css" />
     <link rel="stylesheet" href="./styles/output.css " />
     <link rel="stylesheet" href="./styles/dark-mode.css" />
+    <link rel="stylesheet" href="./styles/calculator.css" />
     <!-- IMORT Google FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,7 +38,7 @@
           <li><a class="header__link" href="./hobby.html">Hobbys</a></li>
           <li><a class="header__link" href="#skills">Skills</a></li>
           <li><a class="header__link" href="./projects.html">Projects</a></li>
-          <li><a class="header__link" href="contact.html">Makramee</a></li>
+          <li><a class="header__link" href="#Calculator">Calculator</a></li>
           <!-- underline in navigation -->
           <li class="header__line"></li>
           <li><a class="header__link" href="contact.html">Contact</a></li>
@@ -150,9 +151,9 @@
         <div class="about__img-wrapper">
           <img
             class="about__img"
-            width="400px "
+            width="700px "
             height="500px"
-            src="./ASSETS/pics/IMG_5074.JPG"
+            src="#"
             alt=""
           />
         </div>
@@ -223,6 +224,75 @@
           </p>
         </div>
       </div>
+    </section>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- Calculator -->
+    <section class="main-calc">
+      <div id="resultArea" class="resultWindow"></div>
+
+      <table class="center-container">
+        <tr>
+          <td class="hover">
+            <img src="./img/icons8-bubbles-48.png" alt="" />
+          </td>
+          <td class="hover">
+            <img src="./img/icons8-cyclone-48.png" alt="" />
+          </td>
+          <td class="hover"><img src="" alt="" /></td>
+          <td onclick="deleteLast()">DEL</td>
+        </tr>
+
+        <tr>
+          <td onclick="appendOperation(7)">7</td>
+          <td onclick="appendOperation(8)" class="table">8</td>
+          <td onclick="appendOperation(9)">9</td>
+          <td onclick="appendOperation(' / ')" class="table">/</td>
+        </tr>
+
+        <tr>
+          <td onclick="appendOperation(4)" class="table">4</td>
+          <td onclick="appendOperation(5)">5</td>
+          <td onclick="appendOperation(6)" class="table">6</td>
+          <td onclick="appendOperation(' * ')">x</td>
+        </tr>
+
+        <tr>
+          <td onclick="appendOperation(1)">1</td>
+          <td onclick="appendOperation(2)" class="table">2</td>
+          <td onclick="appendOperation(3)">3</td>
+          <td onclick="appendOperation('+')" class="table">+</td>
+        </tr>
+
+        <tr>
+          <td onclick="appendOperation(0)" class="table">0</td>
+          <td onclick="appendOperation(' . ')">,</td>
+          <td onclick="calculateResult()" id="result" class="table">=</td>
+          <td onclick="appendOperation(' - ')">-</td>
+        </tr>
+      </table>
+      <button id="calc-btn">
+        <a href="https://friesenkatharina.github.io/calculator/">GithubPage</a>
+      </button>
+
+      <div class="calc-description">
+        <h3>Calculator</h3>
+        <p>
+          This project is a web-based calculator created using HTML, CSS, and
+          JavaScript. HTML structures the calculator's interface, including
+          buttons for digits, operations, and an area to display results. CSS is
+          used for styling, giving the calculator an attractive and
+          user-friendly appearance. JavaScript powers the calculator's
+          functionality, handling user inputs, mathematical operations, and
+          updating the display. This combination of technologies results in a
+          fully functional, interactive calculator that can perform basic
+          arithmetic operations, enhancing the user's web experience.
+        </p>
+      </div>
+      <span></span>
     </section>
 
     <!-- FOOTER -->

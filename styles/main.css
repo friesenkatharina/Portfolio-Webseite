@@ -78,55 +78,58 @@
     width: 100%;
   }
 }
+@media (max-width: 600px) {
+  .hero__title {
+    animation: none;
+  }
+}
+
 /* SCREEN SET UP CONTAINER TOP */
-/* 
+
 @media (max-width: 275px) {
   .container {
     margin: 0 auto;
     padding-right: 300px;
   }
-  .header__link{
+}
 
-  }
-} */
-
-/* small
+/* small */
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
   }
-} */
+}
 
 /* medium */
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   .container {
     max-width: 768px;
   }
-} */
+}
 
 /* large */
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
   .container {
     max-width: 1024px;
   }
   .section {
     margin-top: 10rem;
   }
-} */
+}
 
 /* xl */
-/* @media (min-width: 1280px) {
+@media (min-width: 1280px) {
   .container {
     max-width: 1280px;
   }
-} */
+}
 
 /* XXL */
-/* @media (min-width: 1536px) {
+@media (min-width: 1536px) {
   .container {
     max-width: 1536px;
   }
-} */
+}
 
 /* Animation IMG Roboter */
 
