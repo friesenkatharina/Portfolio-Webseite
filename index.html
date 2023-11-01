@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- IMPORT CSS -->
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/main.css" />
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/Projects.css" />
     <link rel="stylesheet" href="./styles/output.css " />
+    <link rel="stylesheet" href="./styles/dark-mode.css" />
     <!-- IMORT Google FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,14 +23,8 @@
       rel="stylesheet"
     />
 
-    <!-- CDNJS Fontawasem Link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!--  Link  Google Fonts-->
+
     <title>My Portfolio</title>
   </head>
   <body>
@@ -36,53 +32,39 @@
 
     <header class="header container">
       <nav>
-        <!-- <img
-          id="coloredImage"
-          class="hero__img element"
-          src="./assets/pics/android-svgrepo-com.svg"
-          alt="Profile picture"
-        /> -->
         <ul class="header__menu underline margin-top">
           <li><a class="header__link" href="#about">About</a></li>
           <li><a class="header__link" href="./hobby.html">Hobbys</a></li>
           <li><a class="header__link" href="#skills">Skills</a></li>
           <li><a class="header__link" href="./projects.html">Projects</a></li>
-          <li><a class="header__link" href="contact.html">Contact</a></li>
-
+          <li><a class="header__link" href="contact.html">Makramee</a></li>
           <!-- underline in navigation -->
           <li class="header__line"></li>
-          <!-- lightbulb and Button in navigation -->
-
-          <button id="theme-toggle" class="header__bulb">
-            <i class="fa-regular fa-lightbulb"> </i>
-          </button>
-
           <li><a class="header__link" href="contact.html">Contact</a></li>
         </ul>
-
-        <!--End of Lightbulb an Button in Navigation -->
       </nav>
     </header>
 
     <!-- Mobile Navigation -->
 
-    <nav class="mobile-nav">
+    <!-- <nav class="mobile-nav">
       <ul class="mobile-nav__menu">
         <li><a class="mobile-nav__link" href="#about"></a>About</li>
 
         <li><a class="mobile-nav__link" href="#skills"></a>Skills</li>
         <li><a class="mobile-nav__link" href="#hobbys">Hobbys</a></li>
         <li>
-          <a class="mobile-nav__link" href="./Box-sizing-Border-box/Treppe.html"
-            >Projects</a
-          >
+          <a class="mobile-nav__link" href="#">Projects</a>
         </li>
         <li><a class="mobile-nav__link" href="contact.html">Contact</a></li>
 
         <li class="mobile-nav__link-line"></li>
         <li>
           <button id="theme-toggle" class="mobile-nav__bulb">
-            <i class="fa-regular fa-lightbulb"></i>
+            <img
+              class="lightbulb fa-regular"
+              src="./assets/pics/lightbulb.png"
+            />
           </button>
         </li>
         <li>
@@ -91,10 +73,17 @@
           >
         </li>
       </ul>
-    </nav>
+    </nav> -->
 
     <!-- End of Mobile Navigation -->
 
+    <h2 class="left">Toggle Dark/Light Mode</h2>
+    <p class="left">
+      Click the button to toggle between dark and light mode for this page.
+    </p>
+    <button class="lightbulb" onclick="toggleDarkMode()">
+      <img class="lightbulb" src="./space.png" alt="Toggle Dark/LightMode" />
+    </button>
     <!--Start Main -->
     <main>
       <section class="hero container">
@@ -163,7 +152,7 @@
             class="about__img"
             width="400px "
             height="500px"
-            src="./assets/pics/cloud-server2-svgrepo-com.svg"
+            src="./ASSETS/pics/IMG_5074.JPG"
             alt=""
           />
         </div>
@@ -179,8 +168,11 @@
           <h3>HTML & CSS</h3>
 
           <div class="icon-container">
-            <i class="fa-brands fa-html5 aside"></i>
-            <i class="fa-brands fa-css3-alt"></i>
+            <img class="img-container aside" src="./html-5.png" alt="" />
+
+            <a href="#"
+              ><img class="img-container css3" src="./css.png" alt="" />
+            </a>
           </div>
 
           <p>
@@ -198,7 +190,8 @@
         </div>
         <div class="card">
           <h3>Java Script</h3>
-          <i class="fa-brands fa-js"></i>
+
+          <img class="img-container" src="./js-file.png" />
           <p>
             Iusto, et? voluptate consectetur similique esse eius suscipit eos
             quasi quia iste. Iusto, et? Iusto, et? voluptate consectetur
@@ -214,8 +207,8 @@
         </div>
         <div class="card">
           <h3>React</h3>
-          <i class="fa-brands fa-react"></i>
 
+          <img src="./react.png" class="img-container" />
           <p>
             Iusto, et? voluptate consectetur similique esse eius suscipit eos
             quasi quia iste. Iusto, et? Iusto, et? voluptate consectetur
@@ -238,9 +231,9 @@
       <div class="footerContainer">
         <div class="socialIcons">
           <a href="https://github.com/friesenkatharina"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            ><img src="./github.png" alt=""
+          /></a>
+          <a href="#"><img src="./linkedin.png" alt="#" /></a>
         </div>
 
         <div class="footerBottom">
@@ -253,7 +246,7 @@
     </footer>
 
     <!--  end of footer>  -->
-
+    <script src="./src/script.js"></script>
     <script src="/src/main.js"></script>
   </body>
 </html>

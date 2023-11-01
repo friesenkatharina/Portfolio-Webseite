@@ -19,6 +19,7 @@
   width: 350px;
   max-width: calc(90% -40%);
   background-color: #475569;
+  border-bottom: 20px solid paleturquoise;
   border-radius: 100px;
   padding: 60px 20px;
   display: flex;
@@ -34,13 +35,14 @@
   color: #1e293b;
 }
 
-.fa-brands {
-  font-size: 50px;
+.img-container {
+  width: 100px;
+  margin: 0 auto;
 }
 .icon-container {
   display: flex;
-  margin-left: 35%;
-  gap: 25px;
+
+  gap: 50px;
 }
 
 /* Responsive styles for screens up to 375px */

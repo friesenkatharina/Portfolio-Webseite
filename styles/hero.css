@@ -23,7 +23,8 @@
 }
 
 .underline {
-  width: 100%;
+  width: 85%;
+
   color: #dfe5f3;
   text-decoration: none;
   background-image: linear-gradient(#222b40, #222b40),
@@ -45,7 +46,7 @@ a:hover {
 
 .margin-top {
   margin-top: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .hero_description {
@@ -57,8 +58,26 @@ a:hover {
   text-transform: capitalize;
   font-size: var(--size);
 }
+
+.hero p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 /* xs */
-@media (min-width: 475px) {
+@media (min-width: 275px) {
   .hero {
     gap: 1, 5rem;
   }
@@ -77,6 +96,9 @@ a:hover {
   }
   .hero__btn {
     font-size: var(--size-base);
+  }
+  .underline {
+    margin: 0 auto;
   }
 }
 

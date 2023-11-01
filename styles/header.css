@@ -8,21 +8,21 @@
   z-index: 9999;
   margin-right: 20px;
 }
-#coloredImage {
+/* #coloredImage {
   width: 80px;
   display: flex;
   position: relative;
   left: 50;
   right: 50%;
-}
-.element {
+} */
+/* .element {
   height: 400px;
   width: 400px;
   background-color: red;
   animation: pulse 3s ease infinite alternate,
     nudge 5s linear infinite alternate;
   border-radius: 100%;
-}
+} */
 
 @keyframes pulse {
   10%,
@@ -50,38 +50,40 @@
 }
 
 .header__menu {
-  display: none;
+  display: flex;
+  margin-right: 50px;
+  padding: 0;
 }
 
-.header__bars {
-  color: var(--clr-light);
-  width: var(--size-2xl);
-  height: var(--size-2xl);
-  display: block;
+.header__menu img {
+  background-color: #4f46e5;
+  border-radius: 50%;
+  display: flex;
+  padding: 0px;
+  margin: 20px;
 }
-.header__link {
-  font-size: var(--size-xl);
-}
-.header__link {
-  font-size: var(--size-xl);
-  text-decoration: none;
+li .header__link {
+  font-size: var(--size-base);
 
-  color: var(--clr-slate600);
+  color: #475569;
   letter-spacing: -0.05em;
   transition: color 0.3s;
 }
 .header__link:hover {
-  color: var(--clr-pink);
+  color: #db2777;
 }
-
+.dark-mode img {
+  display: grid;
+  left: 0;
+}
 .header__line {
-  border-right: 1px solid var(--clr-slate400);
+  border-right: 5px solid #94a3b8;
   padding-top: 1.5em;
 }
-.header__bulp {
-  color: var(--clr-slate600);
-  width: var(--size-base);
-  height: var(--size-base);
+.header__bulb img {
+  color: #4f46e5;
+  margin-left: 5px;
+  width: 30px;
   display: block;
 }
 .header__resume {
@@ -109,28 +111,28 @@
     font-size: var(--size-xs);
     text-decoration: none;
     font-weight: 500;
-    color: var(--clr-slate600);
+    color: #475569;
     letter-spacing: -0.05em;
     transition: color 0.3s;
   }
 
   .header__line {
-    border-right: 1px solid var(--clr-slate400);
+    border-right: 1px solid #94a3b8;
     padding-top: 1.5em;
   }
-  .header__bulp {
-    color: var(--clr-slate600);
+  /* .header__bulp {
+    color: #4f46e5;
     width: var(--size-base);
     height: var(--size-base);
     display: block;
-  }
+  } */
   .header__resume {
     font-size: var(--size-xs);
   }
 }
 
 /* large */
-@media (min-width: 1024px) {
+/* /* @media (min-width: 224px) {
   .header__link {
     font-size: var(--size-sm);
   }
@@ -143,4 +145,4 @@
   .header__resume {
     font-size: var(--size-sm);
   }
-}
+} */

@@ -5,7 +5,6 @@
 }
 
 footer {
-  background-color: #475569;
   box-sizing: border-box;
   margin-top: 400px;
 }
@@ -20,9 +19,9 @@ footer {
   margin: 10px;
   border-radius: 50%;
 }
-.socialIcons a i {
-  font-size: 2em;
-  color: #1e293b;
+.socialIcons a img {
+  width: 50px;
+
   opacity: 0.9;
 }
 
@@ -32,21 +31,17 @@ footer {
   background-color: grey;
   transition: 0.5s;
 }
-.socialIcons a:hover {
-  color: white;
-  transition: 0.5s;
-}
 
 .footerBottom {
-  background-color: #475569;
   padding: 20px;
-  display: flex;
-  justify-content: center;
 }
 .footerBottom p {
+  text-align: center;
+  margin-top: 20px;
   color: white;
 }
 .designer {
+  margin: 0 auto;
   opacity: 0.7;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -54,40 +49,18 @@ footer {
   margin: 0px 5px;
 }
 
-/* @media (max-width: 768px) {
-  .footerNav ul {
-    flex-direction: column;
-  }
-  .footerNav ul li {
-    width: 100%;
-    text-align: center;
-    margin: 5px;
-  }
-  section {
-    padding: 3rem 2rem;
-  }
-} */
 /* Anpassungen für Bildschirme  275px */
-@media (min-width: 275px) {
+@media (min-width: 276px) {
   .footerContainer {
-    padding: 18px 10px; /* Reduzierter Seitenabstand */
-    font-size: var(--size-sm);
+    padding: 70px 30px 20px; /* Ursprüngliches Padding für größere Bildschirme */
   }
 
-  .footerBottom p {
-    font-size: 12px; /* Kleinere Schriftgröße */
+  .socialIcons a img {
+    width: 50px; /* Ursprüngliche Icon-Größe */
   }
 
-  .socialIcons a {
-    margin: 0 12px; /* Reduzierter Abstand zwischen Icons */
-  }
-
-  .socialIcons i {
-    font-size: 20px; /* Kleinere Icons */
-  }
+  .footerBottom p,
   .designer {
-    opacity: 0.7;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 1rem; /* Ursprüngliche Schriftgröße */
   }
 }

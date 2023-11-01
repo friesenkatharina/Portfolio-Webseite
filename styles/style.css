@@ -38,20 +38,26 @@
 html {
   scroll-behavior: smooth;
 }
-/* .light-mode {
+.light-mode {
   --clr-light: #1e1b4b;
   --clr-dark: #dcfce7;
   --clr-slate400: #1e293b;
   --clr-slate600: #1e293b;
   --clr-slate800: #1e293b;
-} */
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Chela+One&family=Dancing+Script:wght@400;700&family=Dosis:wght@700&family=Maven+Pro:wght@400;500;600;700&family=Pacifico&family=Roboto:wght@300&display=swap");
 
 body {
   font-family: "Agbalumo";
-  background-color: var(--clr-indigo950);
-  color: var(--clr-slate600);
+  font-weight: 800;
+  background-color: #94a3b8;
+  color: #1e1b4b;
+  padding: 20px;
+}
+.dark-mode {
+  background-color: #1e1b4b;
+  color: white;
 }
 
 /* -------------------- */
@@ -65,16 +71,16 @@ svg {
   user-select: none;
 }
 button {
-  display: flex;
-  padding: 0;
+  /* display: flex;
+  padding: 0; */
   border: none;
   background: none;
   cursor: pointer;
   color: inherit;
 }
 a {
-  color: var(--clr-pink);
+  color: #db2777;
 }
 strong {
-  color: var(--clr-indigo);
+  color: #4f46e5;
 }

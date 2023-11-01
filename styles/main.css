@@ -27,19 +27,19 @@
   font-weight: 500;
   text-decoration: none;
   letter-spacing: -0.05em;
-  background-color: var(--clr-pink);
+  background-color: #db2777;
   color: var(--clr-light);
   padding: 0.5em 1em;
   border-radius: 6px;
   box-shadow: 0 10px 20px rgba(255, 29, 72, 0.5),
-    0 6px 6px rgba(255, 29, 72, 0.5), 0 0 100px -10px var(--clr-pink);
+    0 6px 6px rgba(255, 29, 72, 0.5), 0 0 100px -10px #db2777;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 14px 28px rgba(255, 29, 72, 0.25),
-    0 10px 10px rgba(255, 29, 72, 0.22), 0 0 120px -10px var(--clr-pink);
+    0 10px 10px rgba(255, 29, 72, 0.22), 0 0 120px -10px #db2777;
 }
 /* PAGE TOP */
 .container {
@@ -54,80 +54,100 @@
   margin-top: 5rem;
 }
 
-#coloredImage {
+/* #coloredImage {
   margin-top: 50px;
-}
+} */
 
 .hero__title {
-  margin-top: 45px;
+  margin-top: 145px;
 }
+.hero__title {
+  animation-duration: 20s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
 
-/* SCREEN SET UP CONTAINER TOP */
-/* xs */
-@media (min-width: 375px) {
-  .container {
-    max-width: 375px;
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
+/* SCREEN SET UP CONTAINER TOP */
+/* 
+@media (max-width: 275px) {
+  .container {
+    margin: 0 auto;
+    padding-right: 300px;
+  }
+  .header__link{
 
-/* small */
+  }
+} */
+
+/* small
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
   }
-}
+} */
 
 /* medium */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .container {
     max-width: 768px;
   }
-}
+} */
 
 /* large */
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
   }
   .section {
     margin-top: 10rem;
   }
-}
+} */
 
 /* xl */
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
   }
-}
+} */
 
 /* XXL */
-@media (min-width: 1536px) {
+/* @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
   }
-}
+} */
 
 /* Animation IMG Roboter */
 
-.hero__img {
+/* .hero__img {
   width: 100px;
   position: relative;
-  animation: moveImage 4s linear infinite alternate; /* Animationseigenschaften */
-}
+  animation: moveImage 4s linear infinite alternate; 
+} */
 
 /* CSS-Keyframes für die Animation */
-@keyframes moveImage {
+/* @keyframes moveImage {
   0% {
-    left: 0; /* Startposition (links) */
+    left: 0; 
   }
   100% {
-    left: 200px; /* Endposition (rechts) */
+    left: 200px; 
   }
-}
+} */
 /* Animation nur auf größeren Bildschirmen (mindestens 768px) */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .hero__img {
-    animation: moveImage 4s linear infinite alternate; /* Animationseigenschaften */
+    animation: moveImage 4s linear infinite alternate; 
   }
-}
+} */
