@@ -78,7 +78,7 @@
     width: 100%;
   }
 }
-@media (max-width: 200px) {
+@media screen and (min-width: 200px) and (max-width: 468px) {
   .hero__title {
     animation: none;
   }
