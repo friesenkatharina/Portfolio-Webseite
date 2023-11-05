@@ -61,7 +61,7 @@ function draw(userChoice, computerChoice) {
   const smallCompWord = "comp".fontsize(1).sub();
   const userChoice_div = document.getElementById(userChoice);
   result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord}
-       equals
+       ist gleich
       ${convertToWord(computerChoice)}${smallCompWord}
     unentschieden!`;
   userChoice_div.classList.add("grey-glow");
