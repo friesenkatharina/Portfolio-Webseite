@@ -7,7 +7,7 @@
 }
 body {
   background-color: #24272e;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   overflow: hidden;
 }
 header {
@@ -103,7 +103,7 @@ header > h1 {
 .description {
   width: 500px;
   height: 500px;
-  margin-top: 120px;
+  margin-top: 70px;
   margin-left: 80px;
 }
 .description h3 {
@@ -117,7 +117,8 @@ header > h1 {
 }
 .border {
   margin-top: 15px;
-  border-bottom: 3px solid #0ea5e9;
+  border-bottom: 8px solid #0ea5e9;
+  border-radius: 100%;
 }
 /* responsive for small screens */
 @media only screen and (min-width: 200px) and (max-width: 500px) {
