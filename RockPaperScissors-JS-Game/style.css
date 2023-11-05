@@ -7,6 +7,8 @@
 }
 body {
   background-color: #24272e;
+  scroll-behavior: smooth;
+  overflow: hidden;
 }
 header {
   background: white;
@@ -101,8 +103,8 @@ header > h1 {
 .description {
   width: 500px;
   height: 500px;
-  margin-top: 150px;
-  margin-left: 100px;
+  margin-top: 120px;
+  margin-left: 80px;
 }
 .description h3 {
   color: white;
@@ -114,11 +116,11 @@ header > h1 {
   font-family: Asap, sans-serif;
 }
 .border {
-  margin-top: 30px;
+  margin-top: 15px;
   border-bottom: 3px solid #0ea5e9;
 }
 /* responsive for small screens */
-@media only screen and (min-width: 200px) and (max-width: 400px) {
+@media only screen and (min-width: 200px) and (max-width: 500px) {
   header {
     padding: 20px; /* Reduziertes Padding für kleinere Geräte */
   }
@@ -165,8 +167,23 @@ header > h1 {
     margin: 0 10px; /* Reduzierter Abstand zwischen den Auswahlmöglichkeiten */
   }
   .description {
-    font-size: 15px;
-    width: 100%;
-    margin: 50px auto;
+    width: 100%; /* Nutzt die gesamte Breite aus */
+    height: auto; /* Höhe passt sich dem Inhalt an */
+    margin-top: 50px; /* Reduzierter oberer Abstand */
+    margin-left: 0; /* Kein linker Abstand, zentriert das Element */
+    padding: 0 10px; /* Fügt ein wenig Padding hinzu, damit der Text nicht am Rand klebt */
+  }
+  .description h3 {
+    font-size: 18px; /* Kleinere Schriftgröße für den Titel */
+    padding: 0 10px; /* Fügt ein wenig Padding hinzu, um Konsistenz zu bewahren */
+  }
+  .description p {
+    margin-top: 15px; /* Reduzierter Abstand nach oben */
+    font-size: 16px; /* Kleinere Schriftgröße für den Absatz */
+    padding: 0 10px; /* Fügt ein wenig Padding hinzu, um Konsistenz zu bewahren */
+  }
+  .border {
+    margin-top: 15px; /* Reduzierter Abstand nach oben */
+    border-bottom: 2px solid #0ea5e9; /* Etwas dünnere Linie für die Trennung */
   }
 }
