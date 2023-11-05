@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Stein-Papier-Schere</title>
+  </head>
+  <body>
+    <!-- symantic -->
+
+    <header>
+      <h1>Stein-Papier-Schere</h1>
+    </header>
+    <div class="score-board">
+      <div id="user-label" class="user badge">user</div>
+      <div id="computer-label" class="user badge">comp</div>
+      <!-- span is ein inline Element -->
+      <span id="user-score">0</span> : <span id="computer-score">0</span>
+    </div>
+
+    <div class="result">
+      <p>Papier bedeckt Stein. Du gewinnst!</p>
+    </div>
+
+    <div class="choices">
+      <div class="choice" id="r">
+        <img src="./imgs/rock.png" alt="" />
+      </div>
+      <div class="choice" id="p">
+        <img src="././imgs/paper.png" alt="" />
+      </div>
+      <div class="choice" id="s">
+        <img src="./imgs/scessors.png" alt="" />
+      </div>
+    </div>
+
+    <p id="action-message">du bist dran</p>
+
+    <div class="description">
+      <h3>Spielablauf</h3>
+
+      <p>
+        Die Spieler zählen gemeinsam "drei, zwei, eins" oder sagen "Stein,
+        Papier, Schere" und zeigen gleichzeitig eines der drei Symbole mit ihrer
+        Hand. Dann wird das Ergebnis bestimmt: Wenn beide Spieler dasselbe
+        Symbol zeigen, ist das Ergebnis ein Unentschieden, und das Spiel wird
+        normalerweise wiederholt. Wenn die Spieler unterschiedliche Symbole
+        zeigen, gewinnt der Spieler mit dem stärkeren Symbol.
+      </p>
+      <div class="border"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
