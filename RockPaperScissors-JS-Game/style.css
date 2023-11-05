@@ -165,26 +165,24 @@ header > h1 {
   }
 
   .choice {
-    margin: 0 10px; /* Reduzierter Abstand zwischen den Auswahlmöglichkeiten */
+    margin: 0 10px;
   }
   .description {
-    width: 100%; /* Nutzt die gesamte Breite aus */
-    height: auto; /* Höhe passt sich dem Inhalt an */
-    margin-top: 50px; /* Reduzierter oberer Abstand */
-    margin-left: 0; /* Kein linker Abstand, zentriert das Element */
-    padding: 0 10px; /* Fügt ein wenig Padding hinzu, damit der Text nicht am Rand klebt */
+    /* width: 100%;
+    height: auto; 
+    margin-top: 50px; */
+    display: none;
   }
-  .description h3 {
-    font-size: 18px; /* Kleinere Schriftgröße für den Titel */
-    padding: 0 10px; /* Fügt ein wenig Padding hinzu, um Konsistenz zu bewahren */
-  }
+  /* .description h3 {
+    font-size: 18px; 
+    padding: 0 10px; 
   .description p {
-    margin-top: 15px; /* Reduzierter Abstand nach oben */
-    font-size: 16px; /* Kleinere Schriftgröße für den Absatz */
-    padding: 0 10px; /* Fügt ein wenig Padding hinzu, um Konsistenz zu bewahren */
+    margin-top: 15px; 
+    font-size: 16px; 
+    padding: 0 10px; 
   }
   .border {
-    margin-top: 15px; /* Reduzierter Abstand nach oben */
-    border-bottom: 2px solid #0ea5e9; /* Etwas dünnere Linie für die Trennung */
-  }
+    margin-top: 15px; 
+    border-bottom: 2px solid #0ea5e9; 
+  } */
 }
