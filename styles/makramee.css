@@ -1,0 +1,152 @@
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("../ASSETS/pics/sparkel-background.jpg");
+  background-position: inherit;
+}
+
+/* Video Makramee */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* color: white; */
+  margin-bottom: 100px;
+  padding: 800px;
+  position: relative;
+  overflow: hidden;
+  min-height: 50vh;
+}
+.background-clip {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 30%;
+  min-height: 50%;
+}
+.container {
+  display: grid;
+  gap: 20px;
+}
+.post {
+  position: absolute;
+  left: 50%;
+  padding: 50px;
+}
+
+.post {
+  width: 500px;
+  background: #eee;
+  border: 10px solid grey;
+}
+img {
+  border: 1px solid rgb(0, 0, 0);
+  width: 50%;
+  height: 50%;
+  object-position: center;
+}
+.Regal-img {
+  width: 600px;
+  margin-left: 40px;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+
+.post-01 {
+  position: relative;
+  margin-top: 120px;
+  left: 10%;
+  border: 15px solid black;
+  background: #eee;
+  width: 400px;
+}
+
+.post-02 {
+  position: relative;
+  bottom: 0;
+  left: 40%;
+  margin-top: 50px;
+}
+.post-03 {
+  position: relative;
+  margin-top: 50px;
+  left: 18%;
+}
+.post-04 {
+  margin-top: 50px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+}
+
+.link-container a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  /* border: solid purple;
+    background-color: grey; */
+  width: 80%;
+  margin: 10px auto;
+}
+.link-container:hover {
+  background-color: rgb(123, 187, 27);
+  width: auto;
+  border-radius: 50%;
+}
+.DreamWhite img {
+  width: 300px;
+}
+
+.AllAboutLeafs img {
+  width: 300px;
+  margin-left: 100px;
+}
+.WandbehangStar img {
+  width: 300px;
+  margin-left: 100px;
+}
+aside {
+  border: 2px solid red;
+  position: relative;
+  left: 120%;
+  margin-bottom: 100px;
+  width: 400px;
+  height: 200px;
+}
+
+/* Gallerie */
+.gallery {
+  margin-top: 100px;
+}
+
+.gallery a img {
+  margin: 5px;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  float: left;
+  width: 180px;
+}
+
+div.gallery img {
+  width: 400px;
+  height: 400;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}

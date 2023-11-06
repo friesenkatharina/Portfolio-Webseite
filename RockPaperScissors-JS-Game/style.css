@@ -8,7 +8,7 @@
 body {
   background-color: #24272e;
   /* scroll-behavior: smooth; */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 header {
   background: white;
@@ -123,66 +123,57 @@ header > h1 {
 /* responsive for small screens */
 @media only screen and (min-width: 200px) and (max-width: 500px) {
   header {
-    padding: 20px; /* Reduziertes Padding für kleinere Geräte */
+    padding: 20px;
   }
 
   .score-board {
-    width: 50%; /* Breite dynamisch anpassen */
-    font-size: 24px; /* Kleinere Schriftgröße */
-    padding: 10px 10px; /* Reduziertes Padding */
-    margin: 50px auto; /* Kleinerer Margin */
+    width: 50%;
+    font-size: 24px;
+    padding: 10px 10px;
+    margin: 50px auto;
   }
 
   .result {
-    font-size: 20px; /* Kleinere Schriftgröße */
+    font-size: 20px;
   }
 
   .result > p {
-    font-size: 16px; /* Kleinere Schriftgröße */
-  }
+    font-size: 16px;
 
-  .choice img {
-    width: 50px; /* Kleinere Bilder */
-  }
+    .choice img {
+      width: 50px;
+    }
 
-  #action-message {
-    font-size: 14px; /* Kleinere Schriftgröße */
-    margin-top: 10px; /* Kleinerer Margin */
-  }
+    #action-message {
+      font-size: 14px;
+      margin-top: 10px;
+    }
 
-  .badge {
-    font-size: 12px; /* Kleinere Schriftgröße */
-    padding: 1px 5px; /* Reduziertes Padding */
-  }
+    .badge {
+      font-size: 12px;
+      padding: 1px 5px;
+    }
 
-  #user-label,
-  #computer-label {
-    display: none;
-  }
+    #user-label,
+    #computer-label {
+      display: none;
+    }
 
-  .choices {
-    margin-top: 20px; /* Kleinerer Margin */
-  }
+    .choices {
+      margin-top: 20px;
+    }
 
-  .choice {
-    margin: 0 10px;
+    .choice {
+      margin: 0 10px;
+    }
+    .description {
+      display: none;
+    }
   }
-  .description {
-    /* width: 100%;
-    height: auto; 
-    margin-top: 50px; */
-    display: none;
-  }
-  /* .description h3 {
-    font-size: 18px; 
-    padding: 0 10px; 
-  .description p {
-    margin-top: 15px; 
-    font-size: 16px; 
-    padding: 0 10px; 
-  }
-  .border {
-    margin-top: 15px; 
-    border-bottom: 2px solid #0ea5e9; 
-  } */
+}
+
+.border-2 {
+  width: 200px;
+  background: white;
+  border: 2px solid red;
 }
