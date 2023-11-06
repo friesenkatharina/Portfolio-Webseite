@@ -3,8 +3,8 @@
 # about Main Page
 
 ![Beispielbild](./ASSETS/pics/browser-few-firstPage.png)
-\*Responsive Personal Portfolio Website about me and my projects during one year full time course of WEBDEVELOPMENT.
-using HTML CSS JavaScript
+**Responsive Personal Portfolio Website about me and my projects during one year full time course of WEBDEVELOPMENT.
+using HTML CSS JavaScript**
 
 \*Contains animations
 
