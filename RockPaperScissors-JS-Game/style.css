@@ -129,13 +129,12 @@ header > h1 {
 /* responsive for small screens */
 @media only screen and (min-width: 200px) and (max-width: 500px) {
   header {
-    padding: 20px;
   }
 
   .score-board {
-    width: 50%;
-    font-size: 24px;
-    padding: 10px 10px;
+    width: 40%;
+    font-size: 22px;
+    padding: 20px 10px;
     margin: 50px auto;
   }
 
@@ -152,7 +151,6 @@ header > h1 {
 
     #action-message {
       font-size: 14px;
-      margin-top: 10px;
     }
 
     .badge {
@@ -166,7 +164,7 @@ header > h1 {
     }
 
     .choices {
-      margin-top: 20px;
+      padding: 10px;
     }
 
     .choice {
@@ -196,20 +194,25 @@ header > h1 {
 }
 @media screen and (min-width: 200px) and (max-width: 768px) {
   #myBtn {
-    position: absolute;
+    position: relative;
     top: 80%;
-    left: 28%;
-    width: 150px;
+    left: 30%;
+    width: 100px;
+    margin-top: 50px;
+    margin-bottom: 20px;
   }
   .modal-background {
     height: 30%;
-    margin-top: 80px;
-    position: fixed;
+
+    position: stick;
     left: 0;
     top: 50%;
   }
   .modal-content {
     font-size: 5px;
+  }
+  .choices > .choice > img {
+    padding: auto;
   }
 }
 .modal-background {
