@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <!-- Fontawesome -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <title>Stein-Papier-Schere</title>
+    <!-- IONIC Framework  -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+      rel="stylesheet"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.skypack.dev/@ionic/core/css/core.css"
+    /> -->
   </head>
   <body>
     <!-- symantic -->
@@ -41,24 +51,28 @@
 
     <p id="action-message">du bist dran</p>
 
-    <div class="description">
-      <h3>Spielablauf</h3>
+    <button id="myBtn">Spielablauf</button>
 
-      <p>
-        die symbole zeigen an, Stein, Papier und Schere. Beim klicken auf das
-        gewünschte Sympol wird ausgewertet, ob der Spieler gewinnt oder der
-        Computer. Dann wird das Ergebnis bestimmt: Wenn beide Spieler dasselbe
-        Symbol zeigen, ist das Ergebnis ein Unentschieden, und das Spiel wird
-        normalerweise wiederholt.
-      </p>
-      <div class="border"></div>
+    <div id="myModal" class="modal-background">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+
+        <p class="txt">
+          die symbole zeigen an,
+          <span class="color-txt">Stein, Papier und Schere.</span> <br />
+          <br />
+          Beim klicken auf das gewünschte Sympol wird ausgewertet, ob der
+          Spieler gewinnt oder der Computer.
+          <br />
+          <br />Dann wird das Ergebnis bestimmt: Wenn beide Spieler dasselbe
+          Symbol zeigen, ist das Ergebnis ein Unentschieden, und das Spiel wird
+          normalerweise wiederholt.
+        </p>
+        <div class="border"></div>
+      </div>
     </div>
 
-    <!-- <div class="border-2">
-      <p>don't know what to cook</p>
-      <img src="" alt="" />
-      <a href="../PickMeal.html">klick me </a>
-    </div> -->
     <script src="./app.js"></script>
   </body>
 </html>
