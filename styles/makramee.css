@@ -8,6 +8,19 @@ body {
   background-position: inherit;
 }
 
+/* Social Media Icons top */
+.links ul {
+  margin-top: 50px;
+  background: black;
+  border: 2px solid black;
+  display: block;
+  flex-direction: column;
+  float: left;
+  padding-right: 40px;
+}
+a .fa-brands {
+  width: 30px;
+}
 /* Video Makramee */
 .hero {
   display: flex;

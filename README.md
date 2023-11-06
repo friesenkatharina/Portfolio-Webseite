@@ -12,6 +12,8 @@ using HTML CSS JavaScript**
 
 \*Developed first with the Mobile First methodology
 
+\*Tailwind Color
+
 \*Calculator
 
 **Rock Paper Scissors Game with Java Script**

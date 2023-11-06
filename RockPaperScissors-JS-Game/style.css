@@ -8,7 +8,7 @@
 body {
   background-color: #24272e;
   /* scroll-behavior: smooth; */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 header {
   background: white;
@@ -174,6 +174,15 @@ header > h1 {
 
 .border-2 {
   width: 200px;
+  height: 200px;
+  margin: 0 auto 20px;
+
   background: white;
   border: 2px solid red;
+}
+.border-2 p {
+  font-size: 25px;
+}
+.border-2 a {
+  text-decoration: none;
 }
