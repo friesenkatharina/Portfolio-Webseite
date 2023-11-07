@@ -41,12 +41,10 @@ nav {
   z-index: 2;
   width: 40%;
   height: 20%;
-  color: #0f172a;
+  color: #f87171;
   /* overflow: hidden; */
 }
-.nav-closed h3 {
-  margin: 5px auto;
-}
+
 .nav-closed ul {
   font-size: 30px;
   display: flex;
@@ -58,9 +56,16 @@ nav {
   position: absolute;
   list-style-type: none;
   cursor: pointer;
+  transition: font-weight 0.3s ease, color 0.2s ease, background-color 0.5s ease;
 }
+
 .nav-closed ul:hover {
-  color: #f87171;
+  font-weight: bold;
+}
+.nav-closed ul li:hover {
+  border: 3px solid rgb(82, 80, 80);
+  padding: 10px;
+  border-radius: 50%;
 }
 .nav-open {
   position: absolute;
@@ -82,6 +87,7 @@ nav {
   width: 100%;
 }
 .clothing h2 {
+  color: rgb(82, 80, 80);
   margin-top: 50px;
   position: absolute;
   left: 5%;
@@ -103,26 +109,6 @@ nav {
 @media screen and (min-width: 200px) and (max-width: 450px) {
   html,
   body {
-    font-size: 50%; /* Reduziert die Schriftgröße auf die Hälfte */
-  }
-  .nav-closed h3 {
     display: none;
-  }
-  .cover {
-    display: none;
-  }
-
-  .nav-open {
-    width: 20%; /* Halbierte Breite der geöffneten Navigation */
-    top: 10%; /* Anpassung der Position, wenn nötig */
-  }
-
-  .clothing h2 {
-    font-size: 20px;
-  }
-
-  .nav-images img {
-    height: 20vh;
-    width: 200px;
   }
 }
