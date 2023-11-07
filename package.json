@@ -13,12 +13,11 @@
   "devDependencies": {
     "tailwindcss": "^3.3.4"
   },
-  
-    "nameIconic": "byzu8q--run",
-    "versionIconic": "0.0.0",
-    "private": true,
-    "dependencies": {
-      "@ionic/core": "6.7.5"
-    }
+  "nameIconic": "byzu8q--run",
+  "versionIconic": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@ionic/core": "6.7.5",
+    "gsap": "^3.12.2"
   }
-
+}
