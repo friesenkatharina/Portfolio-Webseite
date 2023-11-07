@@ -100,4 +100,29 @@ nav {
   width: 35vh;
 }
 
-/* Media Query für kleine Geräte */
+@media screen and (min-width: 200px) and (max-width: 450px) {
+  html,
+  body {
+    font-size: 50%; /* Reduziert die Schriftgröße auf die Hälfte */
+  }
+  .nav-closed h3 {
+    display: none;
+  }
+  .cover {
+    display: none;
+  }
+
+  .nav-open {
+    width: 20%; /* Halbierte Breite der geöffneten Navigation */
+    top: 10%; /* Anpassung der Position, wenn nötig */
+  }
+
+  .clothing h2 {
+    font-size: 20px;
+  }
+
+  .nav-images img {
+    height: 20vh;
+    width: 200px;
+  }
+}
