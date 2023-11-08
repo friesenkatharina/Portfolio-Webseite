@@ -70,7 +70,7 @@
     <main>
       <section class="hero container">
         <h2 class="hero__subtitle">Hi, I'm Katharina 👋</h2>
-        <!-- <img id="beweglichesBild" src="../ASSETS/pics/handWink.png" alt="" /> -->
+
         <aside class="aside"></aside>
         <h1 class="hero__title margin-top">WebDev</h1>
         <span class="underline">_____</span>
@@ -92,6 +92,19 @@
           >Resume</a
         >
       </section>
+      <!-- interaktives Code-Editor-Fenster -->
+      <div class="code-editor">
+        <textarea id="codeInput" class="code-input">
+
+    '    const nachricht = document.getElementById("Begruesungsnachricht");' +
+    '    nachricht.classList.add("visible");' +
+    '    nachricht.textContent = "Herzlich Willkommen auf meiner Homepage! Stoebert gerne rum und hinterlasst mir gerne ein Feedback.";' +
+</textarea
+        >
+        <button onclick="runCode()">Run</button>
+        <button onclick="resetCode()">Reset</button>
+        <pre id="output"></pre>
+      </div>
 
       <!-- -------------- START ABOUT SECTION --------------->
       <section id="about" class="about container section">
@@ -141,15 +154,6 @@
         </div>
       </section>
     </main>
-
-    <div class="code-container header_code" id="codeContainer">
-      <!-- <div class="toggle-button" onclick="toggleContainer()">☰</div> -->
-      <div class="progress-bar progress-container" id="myBar">
-        <button class="alert" onclick="setTimeout(myFunction, 3000);">
-          🚨
-        </button>
-      </div>
-    </div>
 
     <!-- ----------- END OF ABOUT SECTION -------------------------- -->
 

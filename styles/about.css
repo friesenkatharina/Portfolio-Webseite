@@ -174,9 +174,31 @@
       0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
-.alert {
-  border: 2px solid #151515;
-  border-radius: 50%;
-  font-size: 60px;
-  position: absolute;
+
+.code-editor {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 150px;
+}
+
+.code-input {
+  width: 90%;
+  height: 150px;
+  background-color: #333;
+  color: #f8f8f2;
+  border: none;
+  padding: 10px;
+  font-family: "Fira Code", monospace;
+  margin-bottom: 10px;
+}
+
+#output {
+  white-space: pre-wrap;
+}
+
+button {
+  padding: 5px 10px;
+  margin-right: 5px;
 }
