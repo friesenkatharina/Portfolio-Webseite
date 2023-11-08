@@ -3,7 +3,6 @@
   flex-direction: column;
   gap: 1rem;
   margin-left: 30px;
-  margin-top: 100px;
 }
 
 .about__content {
@@ -89,7 +88,9 @@
   .about__list {
     font-size: var(--size-xs); /* Kleinere Schriftgröße */
   }
-
+  .about__img {
+    display: none;
+  }
   /* Falls ::before genutzt wird, könnten Anpassungen nötig sein, abhängig vom Kontext
   .about__::before {
     margin-left: 0.25em;
@@ -144,8 +145,18 @@
     font-size: var(--size-xl);
   }
   .about__img {
-    width: 24rem;
+    width: 20rem;
   }
+}
+
+.content {
+  white-space: normal; /* Erlaubt den Zeilenumbruch und behält Einrückungen und Leerzeichen bei */
+}
+
+/* ... restlichen CSS-Styles beibehalten ... */
+
+.inhalt {
+  display: flex;
 }
 
 .glow {
@@ -167,17 +178,16 @@
 }
 
 .code-editor {
-  width: 50%;
   background-color: #1e1e1e;
   color: white;
   padding: 30px;
   border-radius: 4px;
-  margin-top: 250px;
+  margin-top: 150px;
   opacity: 0.6;
 }
 
 .code-input {
-  width: 95%;
+  width: 90%;
   height: 150px;
   background-color: #333;
   color: #f8f8f2;
