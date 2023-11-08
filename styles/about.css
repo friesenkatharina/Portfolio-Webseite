@@ -146,3 +146,37 @@
     width: 24rem;
   }
 }
+
+.content {
+  white-space: normal; /* Erlaubt den Zeilenumbruch und behält Einrückungen und Leerzeichen bei */
+}
+
+/* ... restlichen CSS-Styles beibehalten ... */
+
+.inhalt {
+  display: flex;
+}
+
+.glow {
+  font-size: 15px;
+  color: black;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #171616,
+      0 0 40px #151515, 0 0 50px #1b1a1a, 0 0 60px #000000, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.alert {
+  border: 2px solid #151515;
+  border-radius: 50%;
+  font-size: 60px;
+  position: absolute;
+}

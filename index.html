@@ -52,36 +52,6 @@
       </nav>
     </header>
 
-    <!-- Mobile Navigation -->
-
-    <!-- <nav class="mobile-nav">
-      <ul class="mobile-nav__menu">
-        <li><a class="mobile-nav__link" href="#about"></a>About</li>
-
-        <li><a class="mobile-nav__link" href="#skills"></a>Skills</li>
-        <li><a class="mobile-nav__link" href="#hobbys">Hobbys</a></li>
-        <li>
-          <a class="mobile-nav__link" href="#">Projects</a>
-        </li>
-        <li><a class="mobile-nav__link" href="contact.html">Contact</a></li>
-
-        <li class="mobile-nav__link-line"></li>
-        <li>
-          <button id="theme-toggle" class="mobile-nav__bulb">
-            <img
-              class="lightbulb fa-regular"
-              src="./assets/pics/lightbulb.png"
-            />
-          </button>
-        </li>
-        <li>
-          <a class="header__resume btn" href="./assets/Four-Loops-JS.pdf"
-            >Resume</a
-          >
-        </li>
-      </ul>
-    </nav> -->
-
     <!-- End of Mobile Navigation -->
 
     <p class="left">
@@ -96,10 +66,11 @@
       />
     </button>
     <!--Start Main -->
+
     <main>
       <section class="hero container">
         <h2 class="hero__subtitle">Hi, I'm Katharina 👋</h2>
-
+        <!-- <img id="beweglichesBild" src="../ASSETS/pics/handWink.png" alt="" /> -->
         <aside class="aside"></aside>
         <h1 class="hero__title margin-top">WebDev</h1>
         <span class="underline">_____</span>
@@ -170,6 +141,16 @@
         </div>
       </section>
     </main>
+
+    <div class="code-container header_code" id="codeContainer">
+      <!-- <div class="toggle-button" onclick="toggleContainer()">☰</div> -->
+      <div class="progress-bar progress-container" id="myBar">
+        <button class="alert" onclick="setTimeout(myFunction, 3000);">
+          🚨
+        </button>
+      </div>
+    </div>
+
     <!-- ----------- END OF ABOUT SECTION -------------------------- -->
 
     <!-- Project SECTION -->
@@ -222,6 +203,7 @@
             quasi quia iste. Iusto, et? Iusto, et? voluptate consectetur
             similique esse eius suscipit eos
           </p>
+          <button class="mario"><a href="./Mario/index.html"></a></button>
         </div>
         <div class="card">
           <h3>React</h3>
@@ -336,6 +318,6 @@
 
     <!--  end of footer>  -->
     <script src="./src/script.js"></script>
-    <!-- <script src="/src/main.js"></script> -->
+    <script src="./src/main.js"></script>
   </body>
 </html>

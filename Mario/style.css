@@ -1,0 +1,46 @@
+/* body {
+  background-color: black;
+} */
+
+#mario {
+  position: absolute;
+
+  left: 0;
+  transition: left 0.1s;
+  margin-top: 20px;
+}
+#control {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.start {
+  width: 180px;
+  position: absolute;
+  top: 47%;
+  left: 32%;
+  background-color: aqua;
+}
+.left {
+  position: absolute;
+  left: 8%;
+  top: 54%;
+  background-color: blue;
+}
+.right {
+  position: absolute;
+  top: 54%;
+  left: 20%;
+  background-color: blueviolet;
+}
+
+.alert {
+  color: bisque;
+  background-color: grey;
+}
+#beweglichesBild {
+  width: 200px;
+  position: absolute;
+  right: 10%;
+}

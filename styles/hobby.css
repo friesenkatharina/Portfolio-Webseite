@@ -65,6 +65,22 @@ body {
 }
 /* END ANIMATION */
 
+/* back to prew Page btn */
+.switch {
+  position: relative;
+  left: 45%;
+  width: 200px;
+  height: 40px;
+  margin-bottom: 20px;
+  border: 5px solid #166534;
+  background: #374151;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.switch a {
+  text-decoration: none;
+  color: white;
+}
 /* CONTENT SECTION INTERESTS */
 
 .shadow-drop-center {
@@ -156,7 +172,8 @@ body {
   padding-right: 20px;
 }
 .slider img {
-  height: 200px;
+  height: 10vh;
+
   flex: 0 0 100%;
   scroll-snap-align: start;
   object-fit: contain;
@@ -167,6 +184,7 @@ body {
   position: absolute;
   bottom: 1.25rem;
   left: 30%;
+  top: 0;
   transform: translateX(-30%);
   z-index: 1;
 }
@@ -183,9 +201,8 @@ body {
   opacity: 1;
 }
 @media screen and (min-width: 200px) and (max-width: 768px) {
-  .container-1 .slider img {
-    width: 50%;
+  /* .container-1 .slider img {
     padding: 5px;
     left: 20%;
-  }
+  } */
 }

@@ -74,3 +74,60 @@
 //   element.classList.toggle("dark-mode");
 // }
 /* This a top-level function with some arguments that should be mangled */
+// Wink Hand at Main Section
+
+// function frame() {
+//   if (/* test for finished */) {
+//     clearInterval(id);
+//   } else {
+//     /* code to change the element style */
+//   }
+// }
+
+let id = null;
+
+function myMove() {
+  const elem = document.getElementById("beweglichesBild");
+  let pos = 0;
+  let direction = 1; // Richtung: 1 für rechts, -1 für links
+
+  // Vorherige Intervalle löschen, falls vorhanden
+  clearInterval(id);
+
+  // Funktion, die bei jedem Intervallaufruf ausgeführt wird
+  function frame() {
+    // Prüft die Position und ändert die Richtung, wenn nötig
+    if (pos >= 150) {
+      direction = -1; // Bewegung umkehren
+    } else if (pos <= 0) {
+      direction = 1; // Bewegung umkehren
+    }
+
+    // Aktualisiert die Position basierend auf der Richtung
+    pos += direction;
+    elem.style.top = pos + "20 px"; // Korrektur: " 1 px" zu "px"
+    elem.style.left = pos + "px"; // Korrektur: " 2 px" zu "px"
+
+    // Beendet die Animation, wenn die Startposition erreicht ist
+    if (pos === 0 && direction === 1) {
+      clearInterval(id);
+    }
+  }
+
+  // Startet das Intervall, das die Funktion frame() in jedem Frame aufruft
+  id = setInterval(frame, 20); // Intervallzeit von 3ms auf 10ms erhöht für bessere Performance
+}
+
+// Fügt einen Event-Listener hinzu, der die Funktion myMove aufruft, wenn auf das Bild geklickt wird
+document.getElementById("beweglichesBild").addEventListener("click", myMove);
+function myFunction() {
+  alert(
+    "  function begruessen() {\n" +
+      '    const nachricht = document.getElementById("begr\u00FC\u00DFungsnachricht");\n' +
+      '    nachricht.classList.add("visible");\n' +
+      '    nachricht.textContent = "Herzlich Willkommen auf meiner Homepage! St\u00F6bert gerne rum und hinterlasst mir gerne ein Feedback.";\n' +
+      "  }\n\n" +
+      "  setTimeout(begruessen, 1000);\n\n" +
+      "</code></pre>"
+  );
+}
