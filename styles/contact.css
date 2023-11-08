@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+canvas#canvas {
+  background: #360033;
+  background: -webkit-linear-gradient(to bottom, #0b8793, #360033);
+  background: linear-gradient(to bottom, #0b8793, #360033);
+}
+
 section {
   padding: 40px 15%;
 }
