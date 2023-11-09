@@ -30,6 +30,16 @@
     <!-- NAVIGATION -->
 
     <header class="header">
+      <div class="togle">
+
+      <button class="lightbulb" onclick="toggleDarkMode()">
+        <img
+          class="lightbulb"
+          src="./ASSETS/pics/space.png"
+          alt="Toggle Dark/LightMode"
+        />
+      </button>
+    </div>
       <nav>
         <ul class="header__menu margin-top">
           <li><a class="header__link off" href="#about">About</a></li>
@@ -50,34 +60,11 @@
           <li><a class="header__link" href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <!-- Mobile Navigation -->
-    </header>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-    </div>
 
-    <div id="main">
-      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
-        >&#9776; open</span
-      >
-    </div>
-    <p class="left">
-      Click the button to toggle <br />
-      between dark and light mode for this page.
-    </p>
-    <button class="lightbulb" onclick="toggleDarkMode()">
-      <img
-        class="lightbulb"
-        src="./ASSETS/pics/space.png"
-        alt="Toggle Dark/LightMode"
-      />
-    </button>
+    </header>
+    
+    
+    
     <!--Start Main -->
 
     <main>
@@ -165,7 +152,8 @@
             alt=""
           />
         </div>
-    
+
+      </section>
 
     <!-- ----------- END OF ABOUT SECTION -------------------------- -->
 
