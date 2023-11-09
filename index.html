@@ -96,9 +96,9 @@
       <div class="code-editor glow">
         <textarea id="codeInput" class="code-input">
 
-    '    const nachricht = document.getElementById("Begruesungsnachricht");' +
-    '    nachricht.classList.add("visible");' +
-    '    nachricht.textContent = "Herzlich Willkommen auf meiner Homepage! Stoebert gerne rum und hinterlasst mir gerne ein Feedback.";' +
+        const nachricht = document.getElementById("Begruesungsnachricht");' +
+       nachricht.classList.add("visible");' +
+       nachricht.textContent = "Herzlich Willkommen auf meiner Homepage! Stoebert gerne rum und hinterlasst mir gerne ein Feedback.";' +
 </textarea
         >
         <button onclick="runCode()">Run</button>
@@ -143,7 +143,7 @@
             </ul>
           </div>
         </div>
-        <div class="about__img-wrapper">
+        <!-- <div class="about__img-wrapper">
           <img
             class="about__img"
             width="700px "
@@ -151,6 +151,16 @@
             src="./ASSETS/pics/fuchs.jpg"
             alt=""
           />
+        </div> -->
+        <div class="wrapper">
+          <div class="images">
+            <div class="img-1"></div>
+            <div class="img-2"></div>
+          </div>
+          <div class="slider">
+            <div class="drag-line"><span></span></div>
+            <input type="range" min="0" max="100" value="50" />
+          </div>
         </div>
       </section>
     </main>

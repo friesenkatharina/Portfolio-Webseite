@@ -149,32 +149,96 @@
   }
 }
 
-.content {
-  white-space: normal; /* Erlaubt den Zeilenumbruch und behält Einrückungen und Leerzeichen bei */
+/* slider IMG */
+.wrapper {
+  position: relative;
+  display: grid;
+  height: 500px;
+  width: 750px;
+  place-items: center;
+  background: #333;
+  border: 7px solid green;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
-
-/* ... restlichen CSS-Styles beibehalten ... */
-
-.inhalt {
+.wrapper .images {
+  height: 100%;
+  width: 100%;
   display: flex;
 }
-
-.glow {
-  font-size: 15px;
-  color: black;
-  animation: glow 1s ease-in-out infinite alternate;
+.wrapper .images .img-1 {
+  height: 100%;
+  width: 100%;
+  background: url(../ASSETS/pics/kuranda.jpeg) no-repeat;
+}
+.wrapper .slider {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.wrapper .slider input {
+  width: 100%;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.slider input::-webkit-slider-thumb {
+  height: 486x;
+  width: 3px;
+  background: none;
+  -webkit-appearance: none;
+}
+.slider .drag-line {
+  width: 3px;
+  height: 486px;
+  position: absolute;
+  left: 49.85%;
 }
 
-@keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #171616,
-      0 0 40px #151515, 0 0 50px #1b1a1a, 0 0 60px #000000, 0 0 70px #e60073;
-  }
+.slider .drag-line::before,
+.slider .drag-line::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 222px;
+}
+.slider .drag-line::before {
+  top: 0;
+}
+.slider .drag-line::after {
+  bottom: 0;
+}
+.slider .drag-line span {
+  height: 42px;
+  width: 42px;
+  border: 3px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  to {
-    text-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 40px #ff4da6,
-      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
+.slider .drag-line span::before,
+.slider .drag-line span::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 222px;
+  background: white;
+}
+
+.slider .drag-line::before {
+  top: 0;
+}
+.slider .drag-line::after {
+  bottom: 0;
+}
+/* End */
+.content {
+  white-space: normal; /* Erlaubt den Zeilenumbruch und behält Einrückungen und Leerzeichen bei */
 }
 
 .code-editor {

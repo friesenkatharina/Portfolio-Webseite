@@ -12,3 +12,11 @@ function resetCode() {
   document.getElementById("codeInput").value = "";
   document.getElementById("output").textContent = "";
 }
+// slider IMG
+
+const slider = document.querySelector(".slider input");
+const dragLine = document.querySelector(".slider input");
+slider.oninput = () => {
+  let sliderVal = slider.value;
+  dragLine.style.left = sliderVal + "%";
+};
