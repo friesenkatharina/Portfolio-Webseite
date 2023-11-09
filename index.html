@@ -50,10 +50,23 @@
           <li><a class="header__link" href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <!-- Mobile Navigation -->
     </header>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
 
-    <!-- End of Mobile Navigation -->
-
+    <div id="main">
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776; open</span
+      >
+    </div>
     <p class="left">
       Click the button to toggle <br />
       between dark and light mode for this page.
@@ -143,7 +156,7 @@
             </ul>
           </div>
         </div>
-        <!-- <div class="about__img-wrapper">
+        <div class="about__img-wrapper">
           <img
             class="about__img"
             width="700px "
@@ -151,19 +164,8 @@
             src="./ASSETS/pics/fuchs.jpg"
             alt=""
           />
-        </div> -->
-        <div class="wrapper">
-          <div class="images">
-            <div class="img-1"></div>
-            <div class="img-2"></div>
-          </div>
-          <div class="slider">
-            <div class="drag-line"><span></span></div>
-            <input type="range" min="0" max="100" value="50" />
-          </div>
         </div>
-      </section>
-    </main>
+    
 
     <!-- ----------- END OF ABOUT SECTION -------------------------- -->
 
