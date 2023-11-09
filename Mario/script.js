@@ -1,4 +1,4 @@
-// Key concepts covered: -getElementByID() -parseInt  -Math.sin  -getComputedStyle  -
+// Key concepts covered: -getElementByID() -parseInt  -Math.sin  -getComputedStyle  -Math.PI -requestAnimationFrame -includes()  -frame()
 
 const mario = document.getElementById("mario");
 const imgMario = mario.querySelector("img");
@@ -11,9 +11,10 @@ function stopMario() {
 }
 
 function jumpMario() {
-  if (isJumping) return; // Verhindern, dass Mario im Sprung steuert
+  if (isJumping)
+    // Verhindern, dass Mario im Sprung steuert
 
-  isJumping = true;
+    isJumping = true;
   imgMario.src = "../Mario/assets/mario-stand.gif"; // Bild zu einem springenden Mario ändern
   let start = null;
   const jumpHeight = 100; // Die Höhe des Sprungs
@@ -67,51 +68,3 @@ function moveMario(event) {
 
 document.addEventListener("keydown", moveMario);
 document.addEventListener("keyup", stopMario);
-
-// // Wink Hand at Main Section
-
-// // function frame() {
-// //   if (/* test for finished */) {
-// //     clearInterval(id);
-// //   } else {
-// //     /* code to change the element style */
-// //   }
-// // }
-
-// let id = null;
-
-// function myMove() {
-//   const elem = document.getElementById("beweglichesBild");
-//   let pos = 0;
-//   let direction = 1; // Richtung: 1 für rechts, -1 für links
-
-//   // Vorherige Intervalle löschen, falls vorhanden
-//   clearInterval(id);
-
-//   // Funktion, die bei jedem Intervallaufruf ausgeführt wird
-//   function frame() {
-//     // Prüft die Position und ändert die Richtung, wenn nötig
-//     if (pos >= 150) {
-//       direction = -1; // Bewegung umkehren
-//     } else if (pos <= 0) {
-//       direction = 1; // Bewegung umkehren
-//     }
-
-//     // Aktualisiert die Position basierend auf der Richtung
-//     pos += direction;
-//     elem.style.top = pos + "20 px"; // Korrektur: " 1 px" zu "px"
-//     elem.style.left = pos + "px"; // Korrektur: " 2 px" zu "px"
-
-//     // Beendet die Animation, wenn die Startposition erreicht ist
-//     if (pos === 0 && direction === 1) {
-//       clearInterval(id);
-//     }
-//   }
-
-//   // Startet das Intervall, das die Funktion frame() in jedem Frame aufruft
-//   id = setInterval(frame, 20); // Intervallzeit von 3ms auf 10ms erhöht für bessere Performance
-// }
-
-// // Fügt einen Event-Listener hinzu, der die Funktion myMove aufruft, wenn auf das Bild geklickt wird
-// document.getElementById("beweglichesBild").addEventListener("click", myMove);
-// When the user scrolls the page, execute myFunction
