@@ -53,7 +53,7 @@ li .header__link {
 /* medium */
 @media screen and (min-width: 200px) and (max-width: 768px) {
   .header__menu {
-    display: none;
+    display: block;
   }
   .header__menu li a {
     font-size: var(--size-xs);
@@ -63,8 +63,7 @@ li .header__link {
   }
 
   .header__line {
-    border-right: 1px solid #db2777;
-    padding-top: 1.5em;
+    display: none;
   }
 
   .header__resume {
