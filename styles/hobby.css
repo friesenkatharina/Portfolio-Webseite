@@ -170,9 +170,10 @@ body {
   padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 10px;
 }
 .slider img {
-  height: 40vh;
+  max-height: 25vh;
   flex: 0 0 100%;
   scroll-snap-align: start;
   object-fit: contain;
@@ -198,11 +199,7 @@ body {
   opacity: 1;
 }
 @media screen and (min-width: 200px) and (max-width: 768px) {
-  .slider-wrapper {
+  .container-1 {
     width: 100%;
-  }
-  .slider img {
-    height: 14vh;
-    padding-bottom: 15px;
   }
 }
