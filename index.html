@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- FONT AWESOME -->
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-crossorigin="anonymous"
-referrerpolicy="no-referrer"
-/>
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- IMPORT CSS -->
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/main.css" />
@@ -23,7 +23,7 @@ referrerpolicy="no-referrer"
     <link rel="stylesheet" href="./styles/output.css " />
     <link rel="stylesheet" href="./styles/dark-mode.css" />
     <link rel="stylesheet" href="./styles/calculator.css" />
-    <link rel="stylesheet" href="./styles/moonRiver.css">
+    <link rel="stylesheet" href="./styles/moonRiver.css" />
     <!-- IMPORT Google FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,32 +32,31 @@ referrerpolicy="no-referrer"
       rel="stylesheet"
     />
 
-
-
     <title>My Portfolio</title>
   </head>
   <body>
-
-
-
     <!-- NAVIGATION -->
 
     <header class="header">
       <div class="togle">
-<p class="txt-toogle">Dark~Light~Mode</p>
-      <button class="lightbulb" onclick="toggleDarkMode()">
-        <img
-          class="lightbulb"
-          src="./ASSETS/pics/space.png"
-          alt="Toggle Dark/LightMode"
-        />
-      </button>
-    </div>
+        <p class="txt-toogle">Dark~Light~Mode</p>
+        <button class="lightbulb" onclick="toggleDarkMode()">
+          <img
+            class="lightbulb"
+            src="./ASSETS/pics/space.png"
+            alt="Toggle Dark/LightMode"
+          />
+        </button>
+      </div>
       <nav>
         <ul class="header__menu margin-top">
-          <li><a  class="header__link off" href="#about">About</a></li>
+          <li><a class="header__link off" href="#about">About</a></li>
           <li><a class="header__link" href="./hobby.html">Hobbys</a></li>
-          <li><a onclick="myFunction()" class="header__link off" href="#skills">Skills</a></li>
+          <li>
+            <a onclick="myFunction()" class="header__link off" href="#skills"
+              >Skills</a
+            >
+          </li>
           <li>
             <a
               class="header__link"
@@ -73,33 +72,32 @@ referrerpolicy="no-referrer"
           <li><a class="header__link" href="contact.html">Contact</a></li>
         </ul>
       </nav>
-
-
     </header>
-
 
     <div id="mySidenav" class="sidenav">
       <!-- Verwenden Sie nur den <a>-Tag für den Schließen-Button -->
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
         <i class="fa-solid fa-circle-xmark"></i>
       </a>
-      
+
       <a class="sidenav_hover" href="#">About</a>
       <a class="sidenav_hover" href="#">Services</a>
-      <a class="sidenav_hover" href="./RockPaperScissors-JS-Game/index.html">Projects</a>
+      <a class="sidenav_hover" href="./RockPaperScissors-JS-Game/index.html"
+        >Projects</a
+      >
       <a class="sidenav_hover" href="#">Skills</a>
       <a class="sidenav_hover" href="#">Contact</a>
     </div>
-    
+
     <div id="main">
       <i class="fa-solid fa-gears" onclick="openNav()"></i>
     </div>
-    
-    
+
     <!--Start Main -->
 
     <main>
       <section class="hero container">
+        <!-- <canvas id="canvas"></canvas> -->
         <h2 class="hero__subtitle">Hi, I'm Katharina 👋</h2>
 
         <aside class="aside"></aside>
@@ -109,21 +107,26 @@ referrerpolicy="no-referrer"
 
         <p class="hero__description">
           <br />
-          <strong>My journey through professional life</strong> 
-           is marked by a wealth of inspiring experiences and diverse stations.
+          <strong>My journey through professional life</strong>
+          is marked by a wealth of inspiring experiences and diverse stations.
           <br />
-          With an everlasting curiosity for the digital, I embark on a full-time 
-         <strong>Web Development study </strong>to further expand my skills. <br>
-          Every code I write and every website I design are like brushstrokes on an 
-           <br>endless canvas of the internet, where I can bring my digital dreams and visions to life. <br>
-            In this world full of possibilities, I strive to be not just a developer, but a digital artist who constantly redefines the boundaries of what is possible."
+          With an everlasting curiosity for the digital, I embark on a full-time
+          <strong>Web Development study </strong>to further expand my skills.
+          <br />
+          Every code I write and every website I design are like brushstrokes on
+          an
+          <br />endless canvas of the internet, where I can bring my digital
+          dreams and visions to life. <br />
+          In this world full of possibilities, I strive to be not just a
+          developer, but a digital artist who constantly redefines the
+          boundaries of what is possible."
         </p>
         <a
           data-micron="groove"
           class="hero__btn btn"
           href="./ASSETS/Four-Loops-JS.pdf"
-          >Resume</a>
-      
+          >Resume</a
+        >
       </section>
       <!-- interaktives Code-Editor-Fenster -->
       <div class="code-editor glow">
@@ -138,58 +141,54 @@ referrerpolicy="no-referrer"
         <button onclick="resetCode()">Reset</button>
         <pre id="output"></pre>
       </div>
+    </main>
+    <!-- -------------- START ABOUT SECTION --------------->
+    <section id="about" class="about container section">
+      <div class="about__content">
+        <h2 class="about__title">About</h2>
+        <p class="about__description">
+          Helo there!
+          <strong
+            >I'm Katharina <br />based in Erlangen, Mittelfranken Germany </strong
+          ><br />The district of Middle Franconia is located in the northwest of
+          Bavaria and borders the neighboring state of Baden-Württemberg to the
+          west.
+        </p>
 
-      <!-- -------------- START ABOUT SECTION --------------->
-      <section id="about" class="about container section">
-        <div class="about__content">
-          <h2 class="about__title">About</h2>
-          <p class="about__description">
-            Helo there!
-            <strong
-              >I'm Katharina <br />based in Erlangen, Mittelfranken Germany </strong
-            ><br />The district of Middle Franconia is located in the northwest
-            of Bavaria and borders the neighboring state of Baden-Württemberg to
-            the west.
-          </p>
+        <p class="about__description">
+          The common thread of my journey is my insatiable appetite for taking
+          on challenges and continually expanding.
 
-          <p class="about__description">
-            The common thread of my journey is my insatiable appetite for taking
-            on challenges and continually expanding.
-
-            <br />
-          </p>
-          <hr class="about__hr" />
-          <h3 class="about__subtitle">
-            which Technologies i'm currently learning
-          </h3>
-          <div class="about__ul-container">
-            <ul class="about__ul">
-              <li class="about__list">HTML</li>
-              <li class="about__list">CSS</li>
-              <li class="about__list">Linux Ubuntu</li>
-            </ul>
-            <ul class="about__ul">
-              <li class="about__list">JavaScript</li>
-              <li class="about__list">Tealwind CSS</li>
-              <li class="about__list">ReactJS</li>
-              <li class="about__list">Python</li>
-            </ul>
-          </div>
+          <br />
+        </p>
+        <hr class="about__hr" />
+        <h3 class="about__subtitle">
+          which Technologies i'm currently learning
+        </h3>
+        <div class="about__ul-container">
+          <ul class="about__ul">
+            <li class="about__list">HTML</li>
+            <li class="about__list">CSS</li>
+            <li class="about__list">Linux Ubuntu</li>
+          </ul>
+          <ul class="about__ul">
+            <li class="about__list">JavaScript</li>
+            <li class="about__list">Tealwind CSS</li>
+            <li class="about__list">ReactJS</li>
+            <li class="about__list">Python</li>
+          </ul>
         </div>
-        <div class="about__img-wrapper">
-          <img
-            class="about__img"
-            src="./ASSETS/pics/fuchs.jpg"/>
-        </div>
+      </div>
+      <div class="about__img-wrapper">
+        <img class="about__img" src="./ASSETS/pics/fuchs.jpg" />
+      </div>
 
-<!-- Lightbox Container -->
-<div id="lightbox-modal" style="display: none;">
-  <span id="close-lightbox">&times;</span>
-  <img id="lightbox-image" src="./ASSETS/pics/sparkel-background.jpg">
-</div>
-
-
-      </section>
+      <!-- Lightbox Container -->
+      <div id="lightbox-modal" style="display: none">
+        <span id="close-lightbox">&times;</span>
+        <img id="lightbox-image" src="./ASSETS/pics/sparkel-background.jpg" />
+      </div>
+    </section>
 
     <!-- ----------- END OF ABOUT SECTION -------------------------- -->
 
@@ -226,7 +225,9 @@ referrerpolicy="no-referrer"
             quasi quia iste. Iusto, et? Iusto, et? voluptate consectetur
             similique esse eius suscipit eos
           </p>
-          <button class="btn" id="read-more-button-one"><a href=""></a>read more</button>
+          <button class="btn" id="read-more-button-one">
+            <a href=""></a>read more
+          </button>
         </div>
         <div class="card">
           <h3>Java Script</h3>
@@ -244,10 +245,11 @@ referrerpolicy="no-referrer"
             quasi quia iste. Iusto, et? Iusto, et? voluptate consectetur
             similique esse eius suscipit eos
           </p>
-          <button class="btn" id="read-more-button-two" class="mario"><a href="#"></a>read more</button>
+          <button class="btn" id="read-more-button-two" class="mario">
+            <a href="#"></a>read more
+          </button>
         </div>
         <div class="card">
-
           <h3>React</h3>
           <img src="./ASSETS/pics/react.png" class="img-container" />
           <p>
@@ -262,7 +264,9 @@ referrerpolicy="no-referrer"
             quasi quia iste. Iusto, et? Iusto, et? voluptate consectetur
             similique esse eius suscipit eos
           </p>
-          <button class="btn" id="read-more-button-three"><a href=""></a>read more</button>
+          <button class="btn" id="read-more-button-three">
+            <a href=""></a>read more
+          </button>
         </div>
       </div>
     </section>
@@ -338,9 +342,6 @@ referrerpolicy="no-referrer"
       <span></span>
     </section>
 
-
-
-
     <canvas id="canvas"></canvas>
 
     <!-- FOOTER -->
@@ -366,6 +367,5 @@ referrerpolicy="no-referrer"
     <!--  end of footer>  -->
     <script src="./src/script.js"></script>
     <!-- <script src="./src/main.js"></script> -->
-
   </body>
 </html>

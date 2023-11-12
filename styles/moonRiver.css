@@ -5,10 +5,8 @@
 
 canvas#canvas {
   margin-top: 150px;
-  display: block;
-  /* background: lightblue; */
-  border-radius: 50%;
-  /* background: -webkit-linear-gradient(to bottom, #0b8793, #360033);
-  background: linear-gradient(to bottom, #0b8793, #360033); */
-  opacity: 2;
+  display: flex;
+  align-items: center;
 }
+
+/*  Das Canvas-Element wird  für Grafiken oder Animationen im Web verwende */

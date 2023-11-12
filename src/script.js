@@ -131,7 +131,7 @@ document
       window.webkitRequestAnimationFrame ||
       window.msRequestAnimationFrame ||
       function (cb) {
-        setTimeout(cb, 17);
+        setTimeout(cb, 2);
       };
 
     /********************
@@ -147,7 +147,7 @@ document
     function drawMoon() {
       ctx.save();
       ctx.beginPath();
-      ctx.fillStyle = "white";
+      ctx.fillStyle = "gold";
       ctx.shadowColor = "gold";
       ctx.shadowBlur = 450;
       ctx.arc(X / 2, Y / 2, radius, 0, Math.PI * 2, false);
@@ -159,7 +159,7 @@ document
         Kirakira
       ********************/
 
-    let particleNum = 500;
+    let particleNum = 1500;
     let particles = [];
 
     function Particle(ctx, x, y) {
@@ -176,14 +176,14 @@ document
         x: 0,
         y: -Math.random() * Math.random(),
       };
-      this.l = rand(10, 50);
+      this.l = rand(0, 50);
     };
 
     Particle.prototype.draw = function () {
       let ctx = this.ctx;
       ctx.save();
-      ctx.fillStyle = "white";
-      ctx.globalCompositeOperation = "lighter";
+      ctx.fillStyle = "gold";
+      ctx.globalCompositeOperation = "dark";
       ctx.globalAlpha = this.ga;
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, false);
@@ -193,7 +193,7 @@ document
 
     Particle.prototype.updateParams = function () {
       this.a += this.inA;
-      this.rad = (this.a * Math.PI) / 180;
+      this.rad = (this.a * Math.PI) / 580;
       this.l -= 0.1;
       if (this.l < 0) {
         this.init(rand(0, X), rand(Y - Y / 4, Y));
@@ -222,7 +222,7 @@ document
     function render() {
       ctx.clearRect(0, 0, X, Y);
       drawMoon();
-      for (let i = 0; i < shapes.length; i++) {
+      for (let i = 1; i < shapes.length; i++) {
         shapes[i].render(i);
       }
       for (let i = 0; i < particles.length; i++) {
