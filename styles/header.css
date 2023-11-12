@@ -14,7 +14,10 @@
   top: 0;
   left: 0;
 }
-
+.togle .txt-toogle {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
 .header__menu {
   display: flex;
 
@@ -31,8 +34,8 @@
   margin: 20px;
 }
 li .header__link {
-  font-size: var(--size-base);
-
+  font-size: var(--size-large);
+  text-decoration: none;
   color: #475569;
   letter-spacing: -0.05em;
   transition: color 0.3s;
@@ -53,7 +56,7 @@ li .header__link {
 /* medium */
 @media screen and (min-width: 200px) and (max-width: 768px) {
   .header__menu {
-    display: block;
+    display: none;
   }
   .header__menu li a {
     font-size: var(--size-xs);
