@@ -26,19 +26,15 @@
   border: 1px solid pink;
 }
 .sidenav .closebtn {
-  margin-left: 157px;
+  margin-left: 105px;
   padding-bottom: 10px;
-  font-size: 36px;
+  font-size: 26px;
   cursor: pointer;
-}
-.fa-gears {
-  margin-top: 20px;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 #main i {
+  position: absolute;
+  right: 10%;
   transition: margin-left 0.3s;
   padding: 16px;
   cursor: pointer;

@@ -128,6 +128,7 @@
 }
 
 /* large */
+
 @media (min-width: 1024px) {
   .about {
     flex-direction: row;
@@ -148,6 +149,9 @@
 
   .about__list {
     font-size: var(--size-large);
+  }
+  .about__img {
+    width: 20rem;
   }
 }
 
@@ -176,7 +180,7 @@
 }
 
 /* slider IMG */
-.wrapper {
+/* .wrapper {
   position: relative;
   display: grid;
   height: 500px;
@@ -261,7 +265,7 @@
 }
 .slider .drag-line::after {
   bottom: 0;
-}
+} */
 /* End */
 .content {
   white-space: normal; /* Erlaubt den Zeilenumbruch und behält Einrückungen und Leerzeichen bei */

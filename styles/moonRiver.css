@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+canvas#canvas {
+  margin-top: 150px;
+  display: block;
+  /* background: lightblue; */
+  border-radius: 50%;
+  /* background: -webkit-linear-gradient(to bottom, #0b8793, #360033);
+  background: linear-gradient(to bottom, #0b8793, #360033); */
+  opacity: 2;
+}
