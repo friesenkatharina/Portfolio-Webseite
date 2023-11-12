@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  overflow: hidden;
+  scroll-behavior: smooth;
 }
 section {
   padding: 40px 15%;
