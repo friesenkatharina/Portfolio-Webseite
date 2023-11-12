@@ -66,7 +66,7 @@ function closeNav() {
 document
   .getElementById("read-more-button-one")
   .addEventListener("click", function () {
-    var imgSrc = document.querySelector(".card img").src; // Erhalten Sie den Bild-Quellpfad
+    let imgSrc = document.querySelector(".card img").src; // Erhalten Sie den Bild-Quellpfad
     document.getElementsByClassName("img-container").src = imgSrc; // Setzen Sie das Bild für die Lightbox
     document.getElementsByClassName("img-container").style.display = "flex";
   });
@@ -80,7 +80,7 @@ document
 document
   .getElementById("read-more-button-two")
   .addEventListener("click", function () {
-    var imgSrc = document.querySelector(".card img").src; // Erhalten Sie den Bild-Quellpfad
+    let imgSrc = document.querySelector(".card img").src; // Erhalten Sie den Bild-Quellpfad
     document.getElementById("lightbox-image").src = imgSrc; // Setzen Sie das Bild für die Lightbox
     document.getElementById("lightbox-modal").style.display = "flex";
   });
@@ -93,7 +93,7 @@ document
 document
   .getElementById("read-more-button-three")
   .addEventListener("click", function () {
-    var imgSrc = document.querySelector(".card img").src; // Erhalten Sie den Bild-Quellpfad
+    let imgSrc = document.querySelector(".card img").src; // Erhalten Sie den Bild-Quellpfad
     document.getElementById("lightbox-image").src = imgSrc; // Setzen Sie das Bild für die Lightbox
     document.getElementById("lightbox-modal").style.display = "flex";
   });
