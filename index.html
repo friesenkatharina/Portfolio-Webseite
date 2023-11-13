@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="./styles/dark-mode.css" />
     <link rel="stylesheet" href="./styles/calculator.css" />
     <link rel="stylesheet" href="./styles/moonRiver.css" />
+    <link rel="stylesheet" href="./styles/dog.css" />
     <!-- IMPORT Google FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -276,6 +277,7 @@
     <br />
     <br />
     <!-- Calculator -->
+
     <section class="main-calc">
       <div id="resultArea" class="resultWindow"></div>
 
@@ -339,14 +341,31 @@
           arithmetic operations, enhancing the user's web experience.
         </p>
       </div>
-      <span></span>
     </section>
 
-    <canvas id="canvas"></canvas>
 
+<!-- DOG -->
+<div class="controls">
+  <label for="animations">Choose</label>
+  <select id="animations" name="animations" id="animations">
+    <option value="idle">idle</option>
+    <option value="jump">jump</option>
+    <option value="fall">fall</option>
+    <option value="run">run</option>
+    <option value="dizzy">dizzy</option>
+    <option value="sit">sit</option>
+    <option value="roll">roll</option>
+    <option value="bite">bite</option>
+    <option value="ko">ko</option>
+    <option value="getHit">getHit</option>
+  </select>
+      <canvas id="canvas1"></canvas>
     <!-- FOOTER -->
 
     <footer>
+  
+      </div>
+
       <div class="footerContainer">
         <div class="socialIcons">
           <a href="https://github.com/friesenkatharina"
@@ -366,6 +385,7 @@
 
     <!--  end of footer>  -->
     <script src="./src/script.js"></script>
+    <script src="./src/dog.js"></script>
     <!-- <script src="./src/main.js"></script> -->
   </body>
 </html>

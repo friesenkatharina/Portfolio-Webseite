@@ -1,8 +1,8 @@
-/* body {
+body {
   background-color: black;
-} */
+}
 
-#mario {
+/* #mario {
   position: absolute;
 
   left: 0;
@@ -43,4 +43,35 @@
   width: 200px;
   position: absolute;
   right: 10%;
+} */
+/* Animation */
+#canvas1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+}
+.controls {
+  position: absolute;
+  z-index: 10;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.controls,
+select,
+option {
+  font-size: 25px;
+}
+
+#canvas2 {
+  position: absolute;
+  border: 3px solid white;
+  width: 800px;
+  height: 700px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
 }
