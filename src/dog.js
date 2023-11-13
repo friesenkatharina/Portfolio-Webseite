@@ -1,5 +1,5 @@
 // Sprite Animation Advance Methode
-let playerState = "sit";
+let playerState = "idle";
 const dropdown = document.getElementById("animations");
 dropdown.addEventListener("change", function (e) {
   // call back function

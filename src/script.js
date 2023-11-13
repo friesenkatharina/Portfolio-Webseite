@@ -38,18 +38,6 @@ document
     document.getElementById("lightbox-modal").style.display = "none";
   });
 
-// Skills Nav ********************
-
-function myFunction() {
-  let txt;
-  if (confirm("Content for this Page is in progress 🏖")) {
-    txt = "You pressed OK!";
-  } else {
-    txt = "You pressed Cancel!";
-  }
-  document.getElementById("demo").innerHTML = txt;
-}
-
 // Mobile NAV *********************
 function initialize() {
   closeNav(); // Schließt den Side-Nav beim Laden der Seite
@@ -66,8 +54,21 @@ function closeNav() {
 // Fügen Sie diesen Code hinzu, um die Initialisierung beim Laden der Seite zu gewährleisten
 document.addEventListener("DOMContentLoaded", initialize);
 
+// Skills Nav ********************
+
+function myFunction() {
+  let txt;
+  if (confirm("Content for this Page is in progress 🏖")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+
 // ReadMoreButton in Project section***************************************
 
+// IMG
 document
   .getElementById("read-more-button-one")
   .addEventListener("click", function () {

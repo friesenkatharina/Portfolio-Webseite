@@ -1,66 +1,72 @@
 body {
-    background-color: mistyrose;
-    margin: 0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: #444;
-  }
-  
-  .page {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  blockquote {
-    max-width: 800px;
-    font-size: 28px;
-  }
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
+  width: 100%;
+  background-color: mistyrose;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #444;
+}
+
+.page {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+blockquote {
+  max-width: 800px;
+  font-size: 28px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  cursor: pointer;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav .gold:hover {
+  border: 4px solid goldenrod;
+}
+.sidenav a:hover {
+  color: lightgreen;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#mySidenav,
+#main i {
+  display: block;
+}
+
+#main i {
+  transition: margin-left 0.7s;
+  padding: 16px;
+}
+/* Media Query für größere Bildschirme */
+@media screen and (min-width: 768px) {
   #mySidenav,
   #main i {
     display: block;
   }
-  
-  #main i {
-    transition: margin-left 0.7s;
-    padding: 16px;
-  }
-  /* Media Query für größere Bildschirme */
-  @media screen and (min-width: 768px) {
-    #mySidenav,
-    #main i {
-      display: none;
-    }
+}

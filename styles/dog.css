@@ -20,3 +20,7 @@ option {
   font-size: 25px;
   cursor: pointer;
 }
+
+option:hover {
+  background-color: palevioletred;
+}
