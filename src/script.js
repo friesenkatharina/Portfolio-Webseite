@@ -65,7 +65,8 @@ function closeNav() {
 }
 // Fügen Sie diesen Code hinzu, um die Initialisierung beim Laden der Seite zu gewährleisten
 document.addEventListener("DOMContentLoaded", initialize);
-// read more
+
+// ReadMoreButton in Project section***************************************
 
 document
   .getElementById("read-more-button-one")
@@ -91,7 +92,7 @@ document
     document.getElementById("lightbox-modal").style.display = "flex";
   });
 
-// function runCode() {
+// function runCode() CODE EDITOR****************************
 function runCode() {
   const codeInput = document.getElementById("codeInput").value;
   try {

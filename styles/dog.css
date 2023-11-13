@@ -1,21 +1,22 @@
 #canvas1 {
-  position: sticky;
-  border: 2px solid black;
-  /* transform: translate(-50%, -50%); */
+  position: absolute;
+  top: 50%;
+  left: 5%;
   width: 600px;
   height: 600px;
+  margin-top: 100px;
   margin-bottom: 150px;
+  cursor: pointer;
 }
 .controls {
-  position: sticky;
-  margin-top: 150px;
-  z-index: 10;
-
+  position: relative;
+  top: 10%;
   left: 10%;
-  /* transform: translateX(-50%); */
 }
 .controls,
 select,
 option {
+  margin-top: 150px;
   font-size: 25px;
+  cursor: pointer;
 }

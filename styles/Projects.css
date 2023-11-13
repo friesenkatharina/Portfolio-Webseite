@@ -4,7 +4,7 @@
   background-color: var(--primary-color);
 }
 #services_section h2 {
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   color: #dcfce7;
 }
@@ -45,38 +45,37 @@
   margin: 0 auto;
 }
 
-/* Responsive styles for screens up to 375px */
 @media screen and (min-width: 200px) and (max-width: 768px) {
   #services_section h2 {
-    font-size: 20px; /* Smaller font size for the title */
-    margin: 20px 0; /* Adjust top and bottom margin */
+    font-size: 20px;
+    margin: 20px 0;
   }
 
   .flex_container {
-    gap: 20px; /* Smaller gap between cards */
+    gap: 20px;
   }
 
   .card {
-    width: 90%; /* Increase width to utilize more screen space */
-    padding: 40px 15px; /* Smaller padding */
-    border-radius: 50px; /* Smaller border radius */
+    width: 90%;
+    padding: 40px 15px;
+    border-radius: 50px;
   }
 
   .card h3 {
-    font-size: 24px; /* Smaller font size for headings in cards */
+    font-size: 24px;
   }
 
   .card p {
-    font-size: 14px; /* Smaller text for readability */
+    font-size: 14px;
   }
 
   .fa-brands {
-    font-size: 20px; /* Smaller icon size */
+    font-size: 20px;
   }
 
   .icon-container {
-    margin-left: 25%; /* Adjust icon container alignment */
-    gap: 15px; /* Reduce gap between icons */
+    margin-left: 25%;
+    gap: 15px;
   }
   .img-container {
     width: 50px;
