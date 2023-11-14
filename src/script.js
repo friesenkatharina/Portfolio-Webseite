@@ -108,3 +108,14 @@ function resetCode() {
   document.getElementById("codeInput").value = "";
   document.getElementById("output").textContent = "";
 }
+
+// Ball
+
+const ball = document.querySelector(".ball");
+
+ball.addEventListener("click", function () {
+  this.style.animation = "none"; // Entfernt vorübergehend die Animation
+  setTimeout(() => {
+    this.style.animation = "bounce-and-rotate 2s infinite ease"; // Setzt die Rotationsanimation zurück
+  }, 10); // Timeout kurz genug, dass es vom Benutzer nicht wahrgenommen wird
+});

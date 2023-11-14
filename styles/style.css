@@ -89,3 +89,62 @@ a {
 strong {
   color: #4f46e5;
 }
+
+/* Ball */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(50px);
+  }
+  40% {
+    transform: translateY(-50px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.ball {
+  display: block;
+  width: 150px;
+  position: absolute;
+  margin-top: 550px;
+  left: 35%;
+  cursor: pointer; /* Verwandelt den Cursor in eine Hand, wenn Sie über den Ball fahren */
+  animation: bounce 1s infinite ease;
+}
+@keyframes jump {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.1) translateY(-100px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.jumping {
+  animation: jump 0.6s ease-out;
+}
+@keyframes bounce-and-rotate {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  30% {
+    transform: translateY(-50px) rotate(360deg);
+  }
+  60% {
+    transform: translateY(-25px) rotate(-360deg);
+  }
+}
+.ball:hover {
+  animation: bounce-and-rotate 2s infinite ease; /* Fügt die Rotationsanimation hinzu */
+}
