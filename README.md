@@ -18,3 +18,8 @@ using HTML CSS JavaScript**
 It's exhilarating to see how my technical skills and knowledge are advancing with each development.
 
 This journey of learning and growing professionally is truly inspiring and fuels my enthusiasm for future enhancements."
+
+success!
+toggle Funktion
+Side Nav
+Calculator funktioniert

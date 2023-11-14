@@ -70,8 +70,10 @@ function draw(userChoice, computerChoice) {
 
 function game(userChoice) {
   const computerChoice = getComputerChoice();
-  //   console.log("user choice =>" + userChoice);
-  //   console.log("computer choice => " + computerChoice);
+
+  // console.log() um zu überprüfung
+  console.log("user choice =>" + userChoice);
+  console.log("computer choice => " + computerChoice);
 
   switch (userChoice + computerChoice) {
     case "rs":
@@ -98,34 +100,6 @@ function main() {
   scissors_div.addEventListener("click", () => game("s"));
 }
 main();
-
-// IONIC FRAMEWORK FUnction => does not work
-
-// async function presentAlert() {
-//   const alert = document.createElement("ion-alert");
-//   alert.header = "Alert";
-//   alert.subHeader = "Important message";
-//   alert.message = "This is an alert!";
-//   alert.buttons = ["OK"];
-
-//   document.body.appendChild(alert);
-//   await alert.present();
-// }
-// import { alertController } from "@ionic/core";
-
-// async function presentAlert() {
-//   const alert = await alertController.create({
-//     header: "Alert",
-//     subHeader: "Important message",
-//     message: "This is an alert!",
-//     buttons: ["OK"],
-//   });
-
-//   return alert.present();
-// }
-// // Das "window" Objekt wird hier verwendet, um die Funktion "presentAlert"
-// // global zugänglich zu machen, damit sie im "onclick" Ereignis aufgerufen werden kann.
-// window.presentAlert = presentAlert;
 
 // ALERT
 let modal = document.getElementById("myModal");
