@@ -112,7 +112,7 @@ strong {
   position: absolute;
   margin-top: 550px;
   left: 35%;
-  cursor: pointer; /* Verwandelt den Cursor in eine Hand, wenn Sie über den Ball fahren */
+  cursor: pointer;
   animation: bounce 1s infinite ease;
 }
 @keyframes jump {

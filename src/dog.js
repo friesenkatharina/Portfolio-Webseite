@@ -1,4 +1,4 @@
-// Sprite Animation Advance Methode
+// Sprite-Animation in einem Canvas-Element
 let playerState = "idle";
 const dropdown = document.getElementById("animations");
 dropdown.addEventListener("change", function (e) {
@@ -17,7 +17,7 @@ const spriteWidth = 575;
 const spriteHeight = 523; // Gesamt 5230 px Höhe, dann 5230/10Reihen img = 523
 
 let gameFrame = 0;
-const staggerFrames = 5; // damit die Animation normal abgespielt wird und nicht zu schnell
+const staggerFrames = 7; // damit die Animation normal abgespielt wird und nicht zu schnell
 const spriteAnimations = [];
 const animationStates = [
   {

@@ -1,7 +1,7 @@
 #canvas1 {
   position: relative;
   top: 50%;
-  left: 5%;
+  left: 0%;
   max-width: 600px;
   max-height: 600px;
   margin-top: 100px;
@@ -35,8 +35,6 @@ option {
     /* Die Größe und Position bleiben gleich */
     width: 500px;
     height: 500px;
-    margin-top: 100px;
-    margin-bottom: 150px;
   }
 
   .controls,
