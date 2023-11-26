@@ -72,24 +72,24 @@ function myFunction() {
 document
   .getElementById("read-more-button-one")
   .addEventListener("click", function () {
-    let imgSrc = document.querySelector(".card img").src; // Erhalten Sie den Bild-Quellpfad
-    document.getElementsByClassName("img-container").src = imgSrc; // Setzen Sie das Bild für die Lightbox
+    let imgSrc = document.querySelector(".card img").src;
+    document.getElementsByClassName("img-container").src = imgSrc;
     document.getElementsByClassName("img-container").style.display = "flex";
   });
 
 document
   .getElementById("read-more-button-two")
   .addEventListener("click", function () {
-    let imgSrc = document.querySelector(".card img").src; // Erhalten Sie den Bild-Quellpfad
-    document.getElementById("lightbox-image").src = imgSrc; // Setzen Sie das Bild für die Lightbox
+    let imgSrc = document.querySelector(".card img").src;
+    document.getElementById("lightbox-image").src = imgSrc;
     document.getElementById("lightbox-modal").style.display = "flex";
   });
 
 document
   .getElementById("read-more-button-three")
   .addEventListener("click", function () {
-    let imgSrc = document.querySelector(".card img").src; // Erhalten Sie den Bild-Quellpfad
-    document.getElementById("lightbox-image").src = imgSrc; // Setzen Sie das Bild für die Lightbox
+    let imgSrc = document.querySelector(".card img").src;
+    document.getElementById("lightbox-image").src = imgSrc;
     document.getElementById("lightbox-modal").style.display = "flex";
   });
 
@@ -114,8 +114,8 @@ function resetCode() {
 const ball = document.querySelector(".ball");
 
 ball.addEventListener("click", function () {
-  this.style.animation = "none"; // Entfernt vorübergehend die Animation
+  this.style.animation = "none";
   setTimeout(() => {
-    this.style.animation = "bounce-and-rotate 2s infinite ease"; // Setzt die Rotationsanimation zurück
-  }, 10); // Timeout kurz genug, dass es vom Benutzer nicht wahrgenommen wird
+    this.style.animation = "bounce-and-rotate 2s infinite ease";
+  }, 10);
 });

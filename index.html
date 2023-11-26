@@ -77,17 +77,16 @@
     </header>
 
     <div id="mySidenav" class="sidenav">
-      <!-- Verwenden Sie nur den <a>-Tag für den Schließen-Button -->
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+      <a href="#" class="closebtn" onclick="closeNav()">
         <i class="fa-solid fa-circle-xmark"></i>
       </a>
 
       <a class="sidenav_hover" href="./Phrases/phrase.html">About</a>
-      <a class="sidenav_hover" href="#">Services</a>
+      <a class="sidenav_hover" href="#">WEBServices</a>
       <a class="sidenav_hover" href="./RockPaperScissors-JS-Game/index.html"
         >Projects</a
       >
-      <a class="sidenav_hover" href="#">Skills</a>
+      <a class="sidenav_hover" href="./Makramee/makramee.html">MakrameeDeco</a>
       <a class="sidenav_hover" href="./contact.html">Contact</a>
     </div>
 
@@ -137,7 +136,7 @@
       const nachricht = document.getElementById(" Greetings 😃 ");' +
       nachricht.classList.add("visible");' +
       nachricht.textContent = "Welcome Fella to my Page! have a look and fell free to live me feedback";' +
-</textarea
+      </textarea
         >
         <button onclick="runCode()">Run</button>
         <button onclick="resetCode()">Reset</button>
@@ -177,6 +176,7 @@
             <li class="about__list">JavaScript</li>
             <li class="about__list">Tealwind CSS</li>
             <li class="about__list">ReactJS</li>
+            <li class="about__list">Redux</li>
             <li class="about__list">Python</li>
           </ul>
         </div>
@@ -233,7 +233,7 @@
           </button>
         </div>
         <div class="card">
-          <h3>Java Script</h3>
+          <h3>Java Script & Typescript</h3>
 
           <img class="img-container" src="./ASSETS/pics/js-file.png" />
           <p>
@@ -253,7 +253,7 @@
           </button>
         </div>
         <div class="card">
-          <h3>React</h3>
+          <h3>React & Redux</h3>
           <img src="./ASSETS/pics/react.png" class="img-container" />
           <p>
             Iusto, et? voluptate consectetur similique esse eius suscipit eos
@@ -345,15 +345,12 @@
       <label for="animations">Choose</label>
       <select id="animations" name="animations" id="animations">
         <option value="idle">idle</option>
-        <!-- <option value="jump">jump</option> -->
-        <!-- <option value="fall">fall</option> -->
+
         <option value="run">run</option>
         <option value="dizzy">dizzy</option>
         <option value="sit">sit</option>
         <option value="roll">roll</option>
         <option value="bite">bite</option>
-        <!-- <option value="ko">ko</option>
-    <option value="getHit">getHit</option> -->
       </select>
     </div>
     <canvas id="canvas1"></canvas>
