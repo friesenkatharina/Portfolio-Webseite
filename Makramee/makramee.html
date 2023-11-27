@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="./carousel.css" />
     <link rel="stylesheet" href="./Animation.css" />
     <link
       rel="stylesheet"
@@ -28,14 +28,48 @@
           <div class="clothing">
             <h2>Customer Favourites</h2>
           </div>
-          <div class="nav-images">
-            <img src="../ASSETS/pics/AllAboutLeafs.jpeg" alt="AllAboutLeafs" />
-            <img
-              src="../ASSETS/pics/WandbehangStar.jpeg"
-              alt="WandbehangStar"
-            />
-          </div>
-        </div>
+          
+<!-- Slider container -->
+<div class="slider" id="button" >
+  <!-- slide 1 -->
+  <div class="slide">
+    <img
+      src="../ASSETS/pics/FlowerRegal.JPEG"
+      alt=""
+    />
+  </div>
+
+  <!-- slide 2 -->
+  <div class="slide">
+    <img
+      src="../ASSETS/pics/DreamWhite.jpeg"
+      alt=""
+    />
+  </div>
+
+  <!-- slide 3 -->
+  <div class="slide">
+    <img
+      src="../ASSETS/pics/WandbehangStar.jpeg"
+      alt=""
+    />
+  </div>
+
+  <!-- slide 4 -->
+  <div class="slide">
+    <img
+      src="../ASSETS/pics/dreamUniverse.jpeg"
+      alt=""
+     
+    />
+  </div>
+
+  <!-- Control buttons -->
+  <button class="btn btn-next">></button>
+  <button class="btn btn-prev"></button>
+</div>
+
+
       </nav>
       <video autoplay muted loop plays-inline class="cover">
         <source src="../ASSETS/pics/MakraFlower.mp4" type="video/mp4" />
@@ -53,6 +87,7 @@
     ></script>
 
     <script src="../Makramee/app.js"></script>
+    <script src="./carousel.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   </body>
 </html>
