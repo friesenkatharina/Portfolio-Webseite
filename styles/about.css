@@ -114,9 +114,9 @@
   .about__list {
     font-size: var(--size-xs); /* Kleinere Schriftgröße */
   }
-  .about__img {
+  /* .about__img {
     display: none;
-  }
+  } */
   /* Falls ::before genutzt wird, könnten Anpassungen nötig sein, abhängig vom Kontext
   .about__::before {
     margin-left: 0.25em;

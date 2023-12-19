@@ -80,7 +80,6 @@ nav {
   margin-top: 50px;
   margin-left: 20px;
   color: rgb(82, 80, 80);
-
   font-size: 30px;
 }
 /* .clothing ul li {
@@ -90,16 +89,16 @@ nav {
   list-style-type: none;
   color: black;
 }
-@media screen and (max-width: 250px) {
+@media (max-width: 250px) {
   .nav-closed ul {
     font-size: 10px; /* Kleinere Schriftgröße */
   }
   .cover {
-    width: 100%; /* Vollbreite auf kleinen Bildschirmen */
+    width: 70%; /* Vollbreite auf kleinen Bildschirmen */
   }
   .slider,
   .nav-open,
   .clothing {
-    width: 100%; /* Anpassung der Breite von Elementen */
+    width: 70%; /* Anpassung der Breite von Elementen */
   }
 }
