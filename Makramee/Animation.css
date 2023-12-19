@@ -75,11 +75,7 @@ nav {
 .clothing ul li {
   display: flex;
   justify-content: space-around;
-}
-.clothing h2 {
-  margin-top: 50px;
-  margin-left: 20px;
-  color: rgb(82, 80, 80);
+
   font-size: 30px;
 }
 /* .clothing ul li {

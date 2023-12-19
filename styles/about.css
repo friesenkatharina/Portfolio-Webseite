@@ -69,8 +69,8 @@
 }
 
 #lightbox-modal img {
-  max-width: 70%;
-  max-height: 70%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #close-lightbox {
@@ -175,7 +175,7 @@
     font-size: var(--size-xl);
   }
   .about__img {
-    width: 20rem;
+    width: 40rem;
   }
 }
 

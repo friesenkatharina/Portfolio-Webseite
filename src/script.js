@@ -27,10 +27,11 @@ function deleteLast() {
 }
 
 // About Section IMG*********************
-document.querySelector(".about__img").addEventListener("click", function () {
-  document.getElementById("lightbox-image").src = "./ASSETS/pics/spain.JPEG"; // Setzen Sie das Bild für die Lightbox
-  document.getElementById("lightbox-modal").style.display = "flex";
-});
+// document.querySelector(".about__img").addEventListener("click", function () {
+//   document.getElementById("lightbox-image").src =
+//     "./ASSETS/GanzkörperansichtMe.jpg"; // Setzen Sie das Bild für die Lightbox
+//   document.getElementById("lightbox-modal").style.display = "flex";
+// });
 
 document
   .getElementById("close-lightbox")
@@ -51,6 +52,14 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
+
+// Date and Time
+function displayDateAndChangeFontSize() {
+  let DemoElement = document.getElementById("demo");
+  DemoElement.innerHTML = new Date().toLocaleString();
+  DemoElement.style.fontSize = "30px";
+}
+
 // Fügen Sie diesen Code hinzu, um die Initialisierung beim Laden der Seite zu gewährleisten
 document.addEventListener("DOMContentLoaded", initialize);
 

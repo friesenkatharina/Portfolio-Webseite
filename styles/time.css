@@ -1,0 +1,14 @@
+.time {
+  border-bottom: 2px solid #db2777;
+  position: absolute;
+  right: 10%;
+  color: #94a3b8;
+  color: #1e1b4b;
+}
+
+#demo {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  color: #db2777;
+}
