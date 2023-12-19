@@ -12,3 +12,9 @@
   right: 5%;
   color: #db2777;
 }
+@media screen and (max-width: 768px) {
+  #demo,
+  .time {
+    display: none;
+  }
+}
