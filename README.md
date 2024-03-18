@@ -12,14 +12,6 @@ using HTML CSS JavaScript**
 
 #Tailwind Color
 
-##Still in progress ... 👋
-"I am continually dedicating myself to the improvement of this project.
-
 It's exhilarating to see how my technical skills and knowledge are advancing with each development.
 
 This journey of learning and growing professionally is truly inspiring and fuels my enthusiasm for future enhancements."
-
-success!
-toggle Funktion
-Side Nav
-Calculator funktioniert

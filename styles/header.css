@@ -8,24 +8,28 @@
   z-index: 9999;
   margin-right: 20px;
 }
-.togle {
+
+.toggle {
   width: 60px;
   position: absolute;
   top: 0;
   left: 0;
 }
-.togle .txt-toogle {
+.toggle .txt-toggle {
   font-size: 12px;
   margin-bottom: 10px;
 }
+
 .header__menu {
   display: flex;
 
   list-style: none;
 }
+
 .header__menu li {
   padding: 10px;
 }
+
 .header__menu img {
   background-color: #4f46e5;
   border-radius: 50%;

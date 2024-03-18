@@ -26,13 +26,6 @@ function deleteLast() {
   container.innerHTML = container.innerHTML.slice(0, -1);
 }
 
-// About Section IMG*********************
-// document.querySelector(".about__img").addEventListener("click", function () {
-//   document.getElementById("lightbox-image").src =
-//     "./ASSETS/GanzkörperansichtMe.jpg"; // Setzen Sie das Bild für die Lightbox
-//   document.getElementById("lightbox-modal").style.display = "flex";
-// });
-
 document
   .getElementById("close-lightbox")
   .addEventListener("click", function () {
@@ -41,7 +34,7 @@ document
 
 // Mobile NAV *********************
 function initialize() {
-  closeNav(); // Schließt den Side-Nav beim Laden der Seite
+  closeNav();
 }
 function openNav() {
   document.getElementById("mySidenav").style.width = "190px";
@@ -55,12 +48,12 @@ function closeNav() {
 
 // Date and Time
 function displayDateAndChangeFontSize() {
-  let DemoElement = document.getElementById("demo");
-  DemoElement.innerHTML = new Date().toLocaleString();
+  const displayElement = document.getElementById("displayArea");
+  const currentDateAndTime = new Date().toLocaleString();
+  displayElement.innerHTML = currentDateAndTime;
   DemoElement.style.fontSize = "30px";
 }
 
-// Fügen Sie diesen Code hinzu, um die Initialisierung beim Laden der Seite zu gewährleisten
 document.addEventListener("DOMContentLoaded", initialize);
 
 // Skills Nav ********************
@@ -118,6 +111,28 @@ function resetCode() {
   document.getElementById("output").textContent = "";
 }
 
+// CUBE
+let isCube = true;
+
+function moveRight() {
+  const cube = document.getElementById("cube");
+  if (isCube) {
+    // Verwandelt sich in einen Pfeil
+    cube.classList.add("arrow");
+    cube.style.transform = "translateX(100px)";
+    isCube = false;
+  }
+}
+
+function moveLeft() {
+  const cube = document.getElementById("cube");
+  if (!isCube) {
+    // Verwandelt sich zurück in einen Würfel
+    cube.classList.remove("arrow");
+    cube.style.transform = "translateX(0)";
+    isCube = true;
+  }
+}
 // Ball
 
 const ball = document.querySelector(".ball");

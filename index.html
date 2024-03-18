@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- IMPORT CSS -->
+    <!-- <link rel="stylesheet" href="./clock/clock.css" /> -->
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/header.css" />
@@ -26,6 +27,7 @@
     <link rel="stylesheet" href="./styles/moonRiver.css" />
     <link rel="stylesheet" href="./styles/dog.css" />
     <link rel="stylesheet" href="./styles/time.css" />
+
     <!-- IMPORT Google FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,8 +42,8 @@
     <!-- NAVIGATION -->
 
     <header class="header">
-      <div class="togle">
-        <p class="txt-toogle">Dark~Light~Mode</p>
+      <div class="toggle">
+        <p class="txt-toggle">Dark~Light~Mode</p>
         <button class="lightbulb" onclick="toggleDarkMode()">
           <img
             class="lightbulb"
@@ -95,13 +97,13 @@
       <i class="fa-solid fa-gears" onclick="openNav()"></i>
     </div>
     <!-- Date and Time -->
+
     <button class="time" type="button" onclick="displayDateAndChangeFontSize()">
-      Click me to display Date and Time.
+      Click me to display 🕚
     </button>
-    <p id="demo"></p>
+    <div id="displayArea"></div>
     <br />
 
-    <p id="demo"></p>
     <!--Start Main -->
 
     <main>
@@ -130,20 +132,40 @@
           boundaries of what is possible."
         </p>
       </section>
+
       <!-- interaktives Code-Editor-Fenster -->
       <div class="code-editor glow">
-        <textarea id="codeInput" class="code-input">
-
+        <textarea
+          id="codeInput"
+          class="code-input"
+          placeholder="Try entering some JavaScript code here. For example: \nalert('Hello, world!');"
+        >
       const nachricht = document.getElementById(" Greetings 😃 ");' +
       nachricht.classList.add("visible");' +
-      nachricht.textContent = "Welcome Fella to my Page! have a look and fell free to live me feedback";' +
+      nachricht.textContent = "Welcome to my Page!" 
       </textarea
         >
         <button onclick="runCode()">Run</button>
         <button onclick="resetCode()">Reset</button>
         <pre id="output"></pre>
+        <div
+          id="cube"
+          style="
+            margin-left: 500px;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: relative;
+            top: 0px;
+          "
+        ></div>
+        <button style="margin-left: 50px" onclick="moveRight()">
+          Move right
+        </button>
+        <button onclick="moveLeft()">Move Left</button>
       </div>
     </main>
+
     <!-- -------------- START ABOUT SECTION --------------->
     <section id="about" class="about container section">
       <div class="about__content">
@@ -401,6 +423,7 @@
     <!--  end of footer>  -->
     <script src="./src/script.js"></script>
     <script src="./src/dog.js"></script>
+
     <!-- <script src="./src/main.js"></script> -->
   </body>
 </html>

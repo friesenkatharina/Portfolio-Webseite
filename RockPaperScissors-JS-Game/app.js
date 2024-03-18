@@ -38,7 +38,7 @@ function win(userChoice, computerChoice) {
     ${convertToWord(computerChoice)}${smallCompWord}
    du gewinnst!`;
   userChoice_div.classList.add("green-glow");
-  setTimeout(() => userChoice_div.classList.remove("green-glow"), 300); // 300 Millisekunden bis zum Entfernen des Effekts
+  setTimeout(() => userChoice_div.classList.remove("green-glow"), 300);
 }
 
 function lose(userChoice, computerChoice) {
@@ -53,7 +53,7 @@ function lose(userChoice, computerChoice) {
       ${convertToWord(computerChoice)}${smallCompWord}
      du verlierst`;
   userChoice_div.classList.add("red-glow");
-  setTimeout(() => userChoice_div.classList.remove("red-glow"), 300); // 300 Millisekunden bis zum Entfernen des Effekts
+  setTimeout(() => userChoice_div.classList.remove("red-glow"), 300);
 }
 
 function draw(userChoice, computerChoice) {
@@ -65,7 +65,7 @@ function draw(userChoice, computerChoice) {
       ${convertToWord(computerChoice)}${smallCompWord}
     unentschieden!`;
   userChoice_div.classList.add("grey-glow");
-  setTimeout(() => userChoice_div.classList.remove("grey-glow"), 300); // 300 Millisekunden bis zum Entfernen des Effekts
+  setTimeout(() => userChoice_div.classList.remove("grey-glow"), 300);
 }
 
 function game(userChoice) {

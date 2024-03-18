@@ -84,35 +84,35 @@
 /* xs */
 @media screen and (min-width: 200px) and (max-width: 768px) {
   .about {
-    margin-left: 15px; /* Geringerer linker Rand */
+    margin-left: 15px;
   }
 
   .about__content {
-    gap: 0.5rem; /* Kleinerer Abstand zwischen Elementen */
+    gap: 0.5rem;
   }
 
   .about__title {
-    font-size: var(--size-xl); /* Kleinere Schriftgröße */
+    font-size: var(--size-xl);
   }
 
   .about__description {
-    font-size: var(--size-xs); /* Kleinere Schriftgröße */
+    font-size: var(--size-xs);
   }
 
   .about__subtitle {
-    font-size: var(--size-xs); /* Kleinere Schriftgröße */
+    font-size: var(--size-xs);
   }
 
   .about__ul-container {
-    flex-direction: column; /* Stapeln Sie die Listen untereinander */
+    flex-direction: column;
   }
 
   .about__ul {
-    padding: 0.5em; /* Weniger Padding */
+    padding: 0.5em;
   }
 
   .about__list {
-    font-size: var(--size-xs); /* Kleinere Schriftgröße */
+    font-size: var(--size-xs);
   }
   /* .about__img {
     display: none;
@@ -190,6 +190,7 @@
 }
 
 .code-input {
+  font-size: 20px;
   width: 90%;
   height: 150px;
   background-color: #333;
@@ -207,4 +208,22 @@
 button {
   padding: 5px 10px;
   margin-right: 5px;
+}
+#cube {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  position: relative;
+  left: 0;
+  transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease,
+    background-color 0.5s ease;
+}
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid blue;
+  transition: transform 0.5s ease, border-width 0.5s ease,
+    border-color 0.5s ease;
 }
