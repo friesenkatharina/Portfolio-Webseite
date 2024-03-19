@@ -20,22 +20,25 @@
         <h1>live me a <span>message</span></h1>
         <p>
           I am available for freelance <br />Connent with me 🤗 <br />
-          email:friesen.katharina@dci-student.net
+          email:friesen.katharina2022@gmail.com
         </p>
 
-        <form action="">
-          <input type="name" placeholder="Your Name" required />
-          <input type="email" name="email" id="email" placeholder="E-mail" />
-          <input type="subject" placeholder="write a Subject" required />
+        <form action="https://formspree.io/f/yourFormId" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="_replyto" placeholder="E-mail" required />
+          <input type="text" name="subject" placeholder="Subject" required />
           <textarea
-            name=""
-            id=""
-            cols="30"
+            name="message"
             rows="10"
             placeholder="Your Message"
             required
           ></textarea>
-          <input type="submit" name="submit" value="Submit" class="btn" />
+          <input type="submit" value="Submit" class="btn" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://yourwebsite.com/thank-you"
+          />
         </form>
       </div>
       <div class="contact-img">
