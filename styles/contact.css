@@ -19,13 +19,6 @@ section {
   align-items: center;
   grid-gap: 6rem;
 }
-.contact-img img {
-  max-width: 100%;
-
-  width: 720px;
-  height: auto;
-  border-radius: 10px;
-}
 
 .contact-form h1 {
   font-size: 80px;
@@ -80,37 +73,36 @@ form textarea {
   background: transparent;
   transform: scale(1.1);
 }
-@media (min-width: 1024px) {
+@media (max-width: 768px) {
   section {
-    padding: 80px 3%;
-    transition: 0.2s;
+    padding: 40px 5%; /* Mehr Raum auf kleinen Geräten */
   }
-  .contact-form h1 {
-    font-size: 50px;
-  }
-  .contact-form p {
-    margin-bottom: 2rem;
-  }
-}
-@media (max-width: 1000px) {
+
   .contact {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Stapelt Elemente vertikal */
+    grid-gap: 2rem;
   }
-  .contact-form {
-    order: 2;
+
+  .contact-form h1 {
+    font-size: 40px; /* Kleinere Überschrift */
   }
+
+  .contact-form p {
+    font-size: 1rem; /* Kleinerer Text */
+  }
+
   .contact-img img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    text-align: center;
+    width: 100%; /* Vollbreite Bilder */
     margin-bottom: 30px;
   }
 }
 
-@media (min-width: 768px) {
-  .contact {
-    grid-gap: 2rem;
-    transition: 0.3s;
+@media (max-width: 480px) {
+  .contact-form h1 {
+    font-size: 32px; /* Noch kleinere Überschrift für sehr kleine Geräte */
+  }
+
+  .contact-form .btn {
+    width: 100%; /* Button voller Breite */
   }
 }
