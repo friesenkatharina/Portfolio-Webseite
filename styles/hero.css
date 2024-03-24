@@ -49,11 +49,12 @@ a:hover {
   padding: 20px;
 }
 
-.hero_description {
-  max-width: 90ch;
-  font-size: var(--size-2-xl);
+/* .hero_description {
+  max-width: 100ch;
+  font-size: var(--size-5-xl);
   color: var(--clr-slate600);
-}
+} */
+
 .hero__btn {
   text-transform: capitalize;
   font-size: var(--size);

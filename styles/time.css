@@ -1,21 +1,30 @@
-.time {
-  border-bottom: 2px solid #db2777;
-  font-size: 20px;
+.time_container {
   position: absolute;
-  right: 5%;
+}
+.time {
+  padding: 15px;
+  border-radius: 30%;
+  border-bottom: 2px solid #db2777;
+  font-size: 15px;
+  position: relative;
+  right: 100%;
   color: #94a3b8;
-  color: #1e1b4b;
+  color: #475569;
 }
 
+#toggleButton {
+  position: relative;
+  right: 30%;
+}
 #displayArea {
   position: absolute;
-  top: 25%;
-  right: 5%;
+  top: 65%;
+  right: 25%;
   color: #db2777;
 }
 @media screen and (max-width: 768px) {
-  #demo,
-  .time {
+  .time,
+  #displayArea {
     display: none;
   }
 }

@@ -80,4 +80,7 @@ li .header__link {
   .off {
     display: none;
   }
+  .time #displayArea {
+    display: none;
+  }
 }

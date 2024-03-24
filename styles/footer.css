@@ -5,10 +5,6 @@
 }
 
 footer {
-  /* background-image: url("");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right; */
   box-sizing: border-box;
   margin-top: 400px;
 }
@@ -52,18 +48,17 @@ footer {
   margin: 0px auto;
 }
 
-/* Anpassungen für Bildschirme  275px */
 @media (min-width: 276px) {
   .footerContainer {
-    padding: 70px 30px 20px; /* Ursprüngliches Padding für größere Bildschirme */
+    padding: 70px 30px 20px;
   }
 
   .socialIcons a img {
-    width: 50px; /* Ursprüngliche Icon-Größe */
+    width: 50px;
   }
 
   .footerBottom p,
   .designer {
-    font-size: 1rem; /* Ursprüngliche Schriftgröße */
+    font-size: 1rem;
   }
 }

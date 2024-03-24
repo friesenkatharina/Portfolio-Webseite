@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./styles/dog.css" />
     <link rel="stylesheet" href="./styles/time.css" />
     <link rel="stylesheet" href="./styles/bee.css">
+    <link rel="stylesheet" href="./styles/infinScrollAnimation.css">
 
     <!-- IMPORT Google FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,6 +57,17 @@
 
       <nav>
         <ul class="header__menu margin-top">
+              <!-- Date and Time -->
+<div class="time_container">  <button class="time" type="button" onclick="displayDateAndChangeFontSize()">
+      Click me to display 
+      <br>
+      🕚
+    </button>
+    <div id="displayArea" style="display: none;"></div></div>
+  
+    
+ 
+  <br />
           <li><a class="header__link off" href="#about">About</a></li>
           <li><a class="header__link" href="./hobby.html">Hobbys</a></li>
           <li>
@@ -97,13 +109,8 @@
     <div id="main">
       <i class="fa-solid fa-gears" onclick="openNav()"></i>
     </div>
-    <!-- Date and Time -->
 
-    <button class="time" type="button" onclick="displayDateAndChangeFontSize()">
-      Click me to display 🕚
-    </button>
-    <div id="displayArea"></div>
-    <br />
+  
 
 <!-- flying bee -->
 <div class="bee-container">
@@ -207,6 +214,9 @@
 
     <!-- ----------- END OF ABOUT SECTION -------------------------- -->
 
+
+    <!-- BADGES -->
+  <h2 class="badgesH2">Badges</h2>
     <section id="services_section">
       <div class="flex_container">
         <div class="card">
@@ -376,7 +386,7 @@
     </section>
 
 <!-- DOG Container -->
-
+<div class="dog-container">  
   <canvas id="canvas1"></canvas>
   <img class="ball" src="./ASSETS/ball.png" alt="" />
   
@@ -391,6 +401,8 @@
     <option value="bite">bite</option>
   </select>
 </div>
+</div>
+
 
 
 
@@ -414,6 +426,42 @@
           </p>
         </div>
       </div>
+
+
+      <section class="infinite-scroll-section">
+      <h1 class="scrollerh1" style="text-align: center">WebDevelopment</h1>
+
+      <div class="scroller" data-speed="fast">
+        <ul class="tag-list scroller__inner">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>ExpressJS</li>
+          <li>TypeScript</li>
+          <li>MongoDB</li>
+          <li>GithubPage</li>
+          <li>VITE</li>
+          <li>Tailwind</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
+      
+      <div class="scroller" data-direction="right" data-speed="slow">
+        <div class="scroller__inner">
+          <img src="./ASSETS/pics/js-file.png" alt="Javascript" />
+          <img src="./ASSETS/pics/css.png" alt="CSS-Style" />
+          <img src="./ASSETS/pics/react.png" alt="ReactJS" />
+          <img src="./ASSETS/pics/database.png" alt="Database" />
+          <img src="./ASSETS/pics/html-5.png" alt="HTML" />
+          <img src="./ASSETS/pics/typescript.png" alt="TypeScript" />
+          <img src="./ASSETS/pics/github.png" alt="GithubPage"/>
+
+        </div>
+      </div>
+
+</section>
+
     </footer>
 
     <!--  end of footer>  -->

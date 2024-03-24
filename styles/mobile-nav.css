@@ -39,7 +39,7 @@
   padding: 16px;
   cursor: pointer;
 }
-/* Media Query für größere Bildschirme */
+
 @media screen and (min-width: 768px) {
   #mySidenav,
   #main i {
