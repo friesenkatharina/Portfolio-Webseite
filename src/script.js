@@ -56,6 +56,31 @@ function displayDateAndChangeFontSize() {
 
 document.addEventListener("DOMContentLoaded", initialize);
 
+// flying bee
+document.addEventListener("DOMContentLoaded", function () {
+  const beeContainer = document.querySelector(".bee-container");
+  const speechBubble = document.querySelector(".speech-bubble");
+
+  let flyingRight = true; // Startet mit dem Flug nach rechts
+
+  // Funktion, um den Text der Sprechblase zu aktualisieren
+  function updateSpeechBubble() {
+    if (flyingRight) {
+      speechBubble.textContent = "Jetzt fliege ich nach rechts!";
+    } else {
+      speechBubble.textContent = "Jetzt fliege ich nach links!";
+    }
+  }
+
+  updateSpeechBubble(); // Initialer Text
+
+  // Interval, um die Richtung basierend auf der Animation zu ändern
+  setInterval(() => {
+    flyingRight = !flyingRight; // Wechselt die Richtung
+    updateSpeechBubble(); // Aktualisiert den Text
+  }, 35000); // Ändert die Richtung alle 35 Sekunden, basierend auf der Animationszeit
+});
+
 // Skills Nav ********************
 
 function myFunction() {
