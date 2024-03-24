@@ -65,10 +65,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Funktion, um den Text der Sprechblase zu aktualisieren
   function updateSpeechBubble() {
+    speechBubble.style.display = "block";
     if (flyingRight) {
-      speechBubble.textContent = "Jetzt fliege ich nach rechts!";
+      speechBubble.textContent = "🌺 🌸 🌺 🌸 ";
     } else {
-      speechBubble.textContent = "Jetzt fliege ich nach links!";
+      speechBubble.textContent = "🍯 🍯 🍯 ";
     }
   }
 
