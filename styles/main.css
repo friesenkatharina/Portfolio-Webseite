@@ -130,27 +130,3 @@
     max-width: 1536px;
   }
 }
-
-/* Animation IMG Roboter */
-
-/* .hero__img {
-  width: 100px;
-  position: relative;
-  animation: moveImage 4s linear infinite alternate; 
-} */
-
-/* CSS-Keyframes für die Animation */
-/* @keyframes moveImage {
-  0% {
-    left: 0; 
-  }
-  100% {
-    left: 200px; 
-  }
-} */
-/* Animation nur auf größeren Bildschirmen (mindestens 768px) */
-/* @media (min-width: 768px) {
-  .hero__img {
-    animation: moveImage 4s linear infinite alternate; 
-  }
-} */

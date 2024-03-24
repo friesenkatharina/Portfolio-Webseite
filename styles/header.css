@@ -57,6 +57,29 @@ li .header__link {
   font-size: var(--size-xs);
 }
 
+.cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #db2777;
+  box-shadow: 100% #4f46e5;
+  /*To put it on the center of the cursor*/
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s;
+  /* So the JS can work properly*/
+  pointer-events: none;
+}
+
+@keyframes colors {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
 /* medium */
 @media screen and (min-width: 200px) and (max-width: 768px) {
   .header__menu {
