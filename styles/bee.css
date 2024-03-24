@@ -1,0 +1,29 @@
+.bee-container {
+  width: 150px;
+  margin-top: 200px;
+  position: absolute;
+
+  will-change: transform;
+  animation: fly 50s linear infinite, vertical-move 5s ease-in-out infinite;
+}
+
+@keyframes fly {
+  0%,
+  100% {
+    left: -52px;
+  }
+  50% {
+    left: calc(100% + 52px);
+  }
+}
+
+@keyframes vertical-move {
+  0%,
+  100% {
+    top: 50px;
+  }
+  25%,
+  75% {
+    top: 100px;
+  }
+}

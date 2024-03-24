@@ -111,28 +111,6 @@ function resetCode() {
   document.getElementById("output").textContent = "";
 }
 
-// CUBE
-let isCube = true;
-
-function moveRight() {
-  const cube = document.getElementById("cube");
-  if (isCube) {
-    // Verwandelt sich in einen Pfeil
-    cube.classList.add("arrow");
-    cube.style.transform = "translateX(100px)";
-    isCube = false;
-  }
-}
-
-function moveLeft() {
-  const cube = document.getElementById("cube");
-  if (!isCube) {
-    // Verwandelt sich zurück in einen Würfel
-    cube.classList.remove("arrow");
-    cube.style.transform = "translateX(0)";
-    isCube = true;
-  }
-}
 // Ball
 
 const ball = document.querySelector(".ball");
