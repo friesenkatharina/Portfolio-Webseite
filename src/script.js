@@ -106,33 +106,6 @@ function myFunction() {
   document.getElementById("demo").innerHTML = txt;
 }
 
-// ReadMoreButton in Project section***************************************
-
-// IMG
-document
-  .getElementById("read-more-button-one")
-  .addEventListener("click", function () {
-    let imgSrc = document.querySelector(".card img").src;
-    document.getElementsByClassName("img-container").src = imgSrc;
-    document.getElementsByClassName("img-container").style.display = "flex";
-  });
-
-document
-  .getElementById("read-more-button-two")
-  .addEventListener("click", function () {
-    let imgSrc = document.querySelector(".card img").src;
-    document.getElementById("lightbox-image").src = imgSrc;
-    document.getElementById("lightbox-modal").style.display = "flex";
-  });
-
-document
-  .getElementById("read-more-button-three")
-  .addEventListener("click", function () {
-    let imgSrc = document.querySelector(".card img").src;
-    document.getElementById("lightbox-image").src = imgSrc;
-    document.getElementById("lightbox-modal").style.display = "flex";
-  });
-
 // function runCode() CODE EDITOR****************************
 function runCode() {
   const codeInput = document.getElementById("codeInput").value;
