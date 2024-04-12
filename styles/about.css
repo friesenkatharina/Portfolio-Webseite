@@ -209,23 +209,11 @@ button {
   padding: 5px 10px;
   margin-right: 5px;
 }
-#cube {
-  width: 50px;
-  height: 50px;
-  background-color: blue;
-  position: relative;
-  left: 0;
-  transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease,
-    background-color 0.5s ease;
-}
-.arrow {
-  width: 0;
-  height: 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 50px solid blue;
-  transition: transform 0.5s ease, border-width 0.5s ease,
-    border-color 0.5s ease;
+
+@media (max-width: 600px) {
+  .code-input {
+    font-size: 11px;
+  }
 }
 
 .badgesH2 {
