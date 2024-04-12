@@ -46,6 +46,8 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
 }
 
+window.onload = initialize;
+
 // Date and Time
 function displayDateAndChangeFontSize() {
   const displayElement = document.getElementById("displayArea");
