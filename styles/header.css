@@ -62,7 +62,7 @@ li .header__link {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #db2777;
+  border: 3px solid #db2777;
   box-shadow: 100% #4f46e5;
   /*To put it on the center of the cursor*/
   transform: translate(-50%, -50%);
