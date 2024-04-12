@@ -62,13 +62,12 @@ li .header__link {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 3px solid #db2777;
-  box-shadow: 100% #4f46e5;
-  /*To put it on the center of the cursor*/
+  border: 1px solid #db2777;
+  box-shadow: 0 0 8px 2px #4f46e5;
   transform: translate(-50%, -50%);
   transition: width 0.3s, height 0.3s;
-  /* So the JS can work properly*/
   pointer-events: none;
+  animation: colors 5s infinite;
 }
 
 @keyframes colors {
@@ -77,6 +76,12 @@ li .header__link {
   }
   100% {
     filter: hue-rotate(360deg);
+  }
+}
+
+@media (hover: hover) {
+  .cursor {
+    display: block;
   }
 }
 

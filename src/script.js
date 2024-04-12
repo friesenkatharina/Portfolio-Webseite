@@ -165,13 +165,22 @@ function addAnimation() {
 
 // cursor
 
-let cursor = document.getElementById("cursor");
+document.addEventListener("mousemove", function (e) {
+  const cursor = document.querySelector(".cursor");
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
+  cursor.style.display = "block"; // Zeigt den Cursor bei Bewegung
+});
 
-document.addEventListener("mousemove", moveCursor);
+document.addEventListener("touchmove", function (e) {
+  const touch = e.touches[0];
+  const cursor = document.querySelector(".cursor");
+  cursor.style.left = touch.clientX + "px";
+  cursor.style.top = touch.clientY + "px";
+  cursor.style.display = "block"; // Zeigt den Cursor bei Touch
+});
 
-function moveCursor(e) {
-  let x = e.clientX;
-  let y = e.clientY;
-  cursor.style.left = `${x}px`;
-  cursor.style.top = `${y}px`;
-}
+document.addEventListener("touchend", function () {
+  const cursor = document.querySelector(".cursor");
+  cursor.style.display = "none"; // Versteckt den Cursor nach dem Loslassen
+});
