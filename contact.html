@@ -17,36 +17,37 @@
     </div>
     <section class="contact">
       <div class="contact-form">
-        <h1>live me a <span>message</span></h1>
+        <h1>Leave me a <span>message</span></h1>
         <p>
-          I am available for freelance <br />Connent with me 🤗 <br />
-          email:friesen.katharina2022@gmail.com
+          I am available for freelance. <br />Connect with me 🤗 <br />
+          email: friesen.katharina2022@gmail.com
         </p>
-
-        <form action="https://formspree.io/f/yourFormId" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="_replyto" placeholder="E-mail" required />
-          <input type="text" name="subject" placeholder="Subject" required />
+        <form id="contact-form">
+          <input
+            type="text"
+            name="user_name"
+            placeholder="Your Name"
+            required
+          />
+          <input type="email" name="user_email" placeholder="E-mail" required />
           <textarea
             name="message"
             rows="10"
             placeholder="Your Message"
             required
           ></textarea>
-          <input type="submit" value="Submit" class="btn" />
-          <input
-            type="hidden"
-            name="_next"
-            value="https://yourwebsite.com/thank-you"
-          />
+          <input type="submit" value="Send" class="btn" />
         </form>
       </div>
       <div class="contact-img">
         <img src="#" alt="" />
       </div>
     </section>
-
-    <script src="./src/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/emailjs.min.js"
+    ></script>
+    <script src="./src/email.js"></script>
     <script src="./clock/clock.js"></script>
   </body>
 </html>

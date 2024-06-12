@@ -2,7 +2,7 @@
   position: absolute;
 }
 .time {
-  padding: 15px;
+  padding: 25px;
   border-radius: 30%;
   border-bottom: 2px solid #db2777;
   font-size: 15px;
@@ -14,12 +14,12 @@
 
 #toggleButton {
   position: relative;
-  right: 30%;
+  right: 35%;
 }
 #displayArea {
   position: absolute;
   top: 65%;
-  right: 25%;
+  right: 30%;
   color: #db2777;
 }
 @media screen and (max-width: 768px) {
