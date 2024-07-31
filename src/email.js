@@ -1,3 +1,4 @@
+//src/email.js
 import config from '../config.js';
 
 document.addEventListener("DOMContentLoaded", function () {
